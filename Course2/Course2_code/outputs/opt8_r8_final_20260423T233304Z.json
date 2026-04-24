@@ -1,0 +1,132 @@
+[
+  {
+    "name": "OPT8_iv_hv_vwap",
+    "alpha_id": "qMmVNaAj",
+    "sharpe": 1.24,
+    "fitness": 0.7,
+    "turnover": 0.1888,
+    "returns": 0.0609,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌1.24 | LOW_FITNESS=❌0.7 | LOW_TURNOVER=✅0.1888 | HIGH_TURNOVER=✅0.1888 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌0.43 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_hvcorr_intra",
+    "alpha_id": "Gr39lp6P",
+    "sharpe": 1.64,
+    "fitness": 1.22,
+    "turnover": 0.149,
+    "returns": 0.0818,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.64 | LOW_FITNESS=✅1.22 | LOW_TURNOVER=✅0.149 | HIGH_TURNOVER=✅0.149 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅0.74 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_hv_dbl",
+    "alpha_id": "npOr7zjl",
+    "sharpe": 0.95,
+    "fitness": 0.49,
+    "turnover": 0.1531,
+    "returns": 0.0404,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌0.95 | LOW_FITNESS=❌0.49 | LOW_TURNOVER=✅0.1531 | HIGH_TURNOVER=✅0.1531 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌0.23 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_hv_range",
+    "alpha_id": "MP5V7GRz",
+    "sharpe": 0.55,
+    "fitness": 0.19,
+    "turnover": 0.2001,
+    "returns": 0.0238,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌0.55 | LOW_FITNESS=❌0.19 | LOW_TURNOVER=✅0.2001 | HIGH_TURNOVER=✅0.2001 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌0.09 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_hv_gap",
+    "alpha_id": "vRJPjApr",
+    "sharpe": 1.1,
+    "fitness": 0.52,
+    "turnover": 0.2087,
+    "returns": 0.0461,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌1.1 | LOW_FITNESS=❌0.52 | LOW_TURNOVER=✅0.2087 | HIGH_TURNOVER=✅0.2087 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌0.23 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_corr_pure",
+    "alpha_id": "A1OEl8pW",
+    "sharpe": 1.22,
+    "fitness": 0.74,
+    "turnover": 0.0743,
+    "returns": 0.0455,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌1.22 | LOW_FITNESS=❌0.74 | LOW_TURNOVER=✅0.0743 | HIGH_TURNOVER=✅0.0743 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅0.63 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_skew360_vwap",
+    "alpha_id": "e7qE9mwz",
+    "sharpe": 1.38,
+    "fitness": 0.82,
+    "turnover": 0.2156,
+    "returns": 0.0753,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.38 | LOW_FITNESS=❌0.82 | LOW_TURNOVER=✅0.2156 | HIGH_TURNOVER=✅0.2156 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌0.44 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_hvlevel_intra",
+    "alpha_id": "VkYe6YvV",
+    "sharpe": 1.19,
+    "fitness": 0.68,
+    "turnover": 0.1641,
+    "returns": 0.0538,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌1.19 | LOW_FITNESS=❌0.68 | LOW_TURNOVER=✅0.1641 | HIGH_TURNOVER=✅0.1641 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌0.39 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_vrp_vwap",
+    "alpha_id": "qMmVWXrZ",
+    "sharpe": 0.96,
+    "fitness": 0.53,
+    "turnover": 0.1652,
+    "returns": 0.0503,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌0.96 | LOW_FITNESS=❌0.53 | LOW_TURNOVER=✅0.1652 | HIGH_TURNOVER=✅0.1652 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌0.36 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_hv_ivlevel_vwap",
+    "alpha_id": "leR18Wn8",
+    "sharpe": 0.61,
+    "fitness": 0.23,
+    "turnover": 0.2101,
+    "returns": 0.0306,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌0.61 | LOW_FITNESS=❌0.23 | LOW_TURNOVER=✅0.2101 | HIGH_TURNOVER=✅0.2101 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌-0.3 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_hv_vwap_sub",
+    "alpha_id": "P0XKZPaq",
+    "sharpe": 1.17,
+    "fitness": 0.6,
+    "turnover": 0.1929,
+    "returns": 0.0507,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌1.17 | LOW_FITNESS=❌0.6 | LOW_TURNOVER=✅0.1929 | HIGH_TURNOVER=✅0.1929 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌0.47 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_hv_closevwap",
+    "alpha_id": "6XYNAXq5",
+    "sharpe": 1.38,
+    "fitness": 0.74,
+    "turnover": 0.2103,
+    "returns": 0.0608,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.38 | LOW_FITNESS=❌0.74 | LOW_TURNOVER=✅0.2103 | HIGH_TURNOVER=✅0.2103 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌0.55 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_iv_corr_dual",
+    "alpha_id": "npOrapME",
+    "sharpe": 1.33,
+    "fitness": 0.89,
+    "turnover": 0.0621,
+    "returns": 0.0559,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.33 | LOW_FITNESS=❌0.89 | LOW_TURNOVER=✅0.0621 | HIGH_TURNOVER=✅0.0621 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅0.72 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  }
+]

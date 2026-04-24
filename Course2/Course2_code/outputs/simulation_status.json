@@ -1,0 +1,402 @@
+[
+  {
+    "idx":1,
+    "template_id":1,
+    "expression":"vec_avg(historical_volatility_10),sector),bucket(rank(cap),range=\"0.1,1,0.1\")),\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/PgE8Jfqi51p9Oc1fiMn8aIB",
+    "error":null,
+    "result":"{\"id\": \"PgE8Jfqi51p9Oc1fiMn8aIB\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"tility_10),sector),b\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 33, \"end\": 34, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":2,
+    "template_id":1,
+    "expression":"vec_avg(historical_volatility_120),sector),bucket(rank(cap),range=\"0.1,1,0.1\")),\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/1XFzuT3p54hKbEJWbvvJBkr",
+    "error":null,
+    "result":"{\"id\": \"1XFzuT3p54hKbEJWbvvJBkr\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ility_120),sector),b\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 34, \"end\": 35, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":3,
+    "template_id":1,
+    "expression":"vec_avg(historical_volatility_150),sector),bucket(rank(cap),range=\"0.1,1,0.1\")),\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/1SghYu7gK4sh8NwiUyY2wRi",
+    "error":null,
+    "result":"{\"id\": \"1SghYu7gK4sh8NwiUyY2wRi\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ility_150),sector),b\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 34, \"end\": 35, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":4,
+    "template_id":1,
+    "expression":"vec_avg(historical_volatility_180),sector),bucket(rank(cap),range=\"0.1,1,0.1\")),\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/1v9hJZgsO56Carqej6j55Id",
+    "error":null,
+    "result":"{\"id\": \"1v9hJZgsO56Carqej6j55Id\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ility_180),sector),b\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 34, \"end\": 35, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":5,
+    "template_id":2,
+    "expression":"group_neutralize(group_zscore(cap,sector),bucket(rank(cap),range=\"0.1,1,0.1\"))),\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/jIkCg6pY4Q6asiImtZAxxp",
+    "error":null,
+    "result":"{\"id\": \"jIkCg6pY4Q6asiImtZAxxp\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ')' near \\\"1,1,0.1\\\"))),\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 78, \"end\": 79, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":6,
+    "template_id":3,
+    "expression":"ts_ir(returns-group_median(returns,sector),126))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/2vjmEAdQ64Ea9pM1b1wjVOQX",
+    "error":null,
+    "result":"{\"id\": \"2vjmEAdQ64Ea9pM1b1wjVOQX\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ')' near \\\"ctor),126))\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 47, \"end\": 48, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":7,
+    "template_id":4,
+    "expression":"fear = ts_mean(abs(returns - group_mean(returns,1,market))\/(abs(returns)+abs(group_mean(returns,1,market))+0.1),20);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/lDAYagdt4u39A6B8AjvtOI",
+    "error":null,
+    "result":"{\"id\": \"lDAYagdt4u39A6B8AjvtOI\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"+0.1),20);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 116, \"end\": 117, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":8,
+    "template_id":5,
+    "expression":"-group_neutralize(fear*group_normalize(ts_decay_exp_window(ts_percentage(vec_count(rsk82_raw_m3g_tni_p_su_fte),60,percentage=0.9)\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/RhZB0eWN4FT9Jw10AQI1c0j",
+    "error":null,
+    "result":"{\"id\": \"RhZB0eWN4FT9Jw10AQI1c0j\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"ntage=0.9)\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 129, \"end\": 130, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":9,
+    "template_id":6,
+    "expression":"-ts_percentage(vec_count(historical_volatility_10),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/2P2ux550z59Da5OB7OBdk9Q",
+    "error":null,
+    "result":"{\"id\": \"2P2ux550z59Da5OB7OBdk9Q\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ntage=0.1),20, facto\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 69, \"end\": 70, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":10,
+    "template_id":6,
+    "expression":"-ts_percentage(vec_count(historical_volatility_120),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/1W0vmY8jK53jcjsdQtyNSD4",
+    "error":null,
+    "result":"{\"id\": \"1W0vmY8jK53jcjsdQtyNSD4\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ntage=0.1),20, facto\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 70, \"end\": 71, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":11,
+    "template_id":6,
+    "expression":"-ts_percentage(vec_count(historical_volatility_150),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/38gD4J4F74PVb30TRtLWOcD",
+    "error":null,
+    "result":"{\"id\": \"38gD4J4F74PVb30TRtLWOcD\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ntage=0.1),20, facto\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 70, \"end\": 71, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":12,
+    "template_id":6,
+    "expression":"-ts_percentage(vec_count(historical_volatility_180),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/hFnd5f4m4lsa9n4hFMRNH4",
+    "error":null,
+    "result":"{\"id\": \"hFnd5f4m4lsa9n4hFMRNH4\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ntage=0.1),20, facto\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 70, \"end\": 71, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":13,
+    "template_id":7,
+    "expression":",bucket(rank(cap),range=\"0.1,1,0.1\"))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/1d0jDCbLl4BG8Se16k175mN0",
+    "error":null,
+    "result":"{\"id\": \"1d0jDCbLl4BG8Se16k175mN0\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"bucket(ra\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 0, \"end\": 1, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":14,
+    "template_id":8,
+    "expression":"d1_level=ts_max(vec_stddev(historical_volatility_10),20);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/3WGCA02cn51bbRSxM3Z1JOm",
+    "error":null,
+    "result":"{\"id\": \"3WGCA02cn51bbRSxM3Z1JOm\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"y_10),20);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 57, \"end\": 58, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":15,
+    "template_id":8,
+    "expression":"d1_level=ts_max(vec_stddev(historical_volatility_120),20);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/6B9ckcW04BSbJqsO0Em9EY",
+    "error":null,
+    "result":"{\"id\": \"6B9ckcW04BSbJqsO0Em9EY\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"_120),20);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 58, \"end\": 59, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":16,
+    "template_id":8,
+    "expression":"d1_level=ts_max(vec_stddev(historical_volatility_150),20);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/42XYyw7cL4Cdcvrt2es2xwZ",
+    "error":null,
+    "result":"{\"id\": \"42XYyw7cL4Cdcvrt2es2xwZ\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"_150),20);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 58, \"end\": 59, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":17,
+    "template_id":8,
+    "expression":"d1_level=ts_max(vec_stddev(historical_volatility_180),20);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/36NfrW4oW4BxbjPHvkG0a9q",
+    "error":null,
+    "result":"{\"id\": \"36NfrW4oW4BxbjPHvkG0a9q\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"_180),20);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 58, \"end\": 59, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":18,
+    "template_id":9,
+    "expression":"d1_stability=ts_kurtosis(vec_stddev(historical_volatility_10),20);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/3onaP18mn4AUaowUO9klPhX",
+    "error":null,
+    "result":"{\"id\": \"3onaP18mn4AUaowUO9klPhX\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"y_10),20);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 66, \"end\": 67, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":19,
+    "template_id":9,
+    "expression":"d1_stability=ts_kurtosis(vec_stddev(historical_volatility_120),20);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/12G8hbfME591brOqrDVki9u",
+    "error":null,
+    "result":"{\"id\": \"12G8hbfME591brOqrDVki9u\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"_120),20);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 67, \"end\": 68, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":20,
+    "template_id":9,
+    "expression":"d1_stability=ts_kurtosis(vec_stddev(historical_volatility_150),20);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/A6oqY4AJ5dObInihQfNwRN",
+    "error":null,
+    "result":"{\"id\": \"A6oqY4AJ5dObInihQfNwRN\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"_150),20);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 67, \"end\": 68, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":21,
+    "template_id":9,
+    "expression":"d1_stability=ts_kurtosis(vec_stddev(historical_volatility_180),20);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/3KfP0Gexz5hbb7312eMWhmOT",
+    "error":null,
+    "result":"{\"id\": \"3KfP0Gexz5hbb7312eMWhmOT\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"_180),20);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 67, \"end\": 68, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":22,
+    "template_id":10,
+    "expression":"mkt_level=group_min(d1_stability,industry);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/3oASUgaS74r78B31fy5XBIVT",
+    "error":null,
+    "result":"{\"id\": \"3oASUgaS74r78B31fy5XBIVT\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"industry);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 43, \"end\": 44, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":23,
+    "template_id":11,
+    "expression":"-group_neutralize(d1_stability<=mkt_level?-d1_level:d1_level,bucket(rank(cap),range=\"0.1,1,0.1\"))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/3gHnCZTc4Rz98HAaTf3kUq",
+    "error":null,
+    "result":"{\"id\": \"3gHnCZTc4Rz98HAaTf3kUq\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Attempted to use unknown variable \\\"d1_stability\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 18, \"end\": 30, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":24,
+    "template_id":12,
+    "expression":"group = bucket(rank(cap),range='0.1,1,0.1')",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/2iF8W8e3G5hvb3Iw63Ehzyb",
+    "error":null,
+    "result":"{\"id\": \"2iF8W8e3G5hvb3Iw63Ehzyb\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":25,
+    "template_id":13,
+    "expression":"risk = rank(-ts_av_diff(vec_min(close),360))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/4rZ6fZdcB4zRa4qe3w2dn3Y",
+    "error":null,
+    "result":"{\"id\": \"4rZ6fZdcB4zRa4qe3w2dn3Y\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":26,
+    "template_id":14,
+    "expression":"alpha=rank((1-risk)*group_rank(ts_scale(vec_max(close)\/close,120),industry))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/4gq4clg614q8bl2kGxpgBZ7",
+    "error":null,
+    "result":"{\"id\": \"4gq4clg614q8bl2kGxpgBZ7\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":27,
+    "template_id":15,
+    "expression":"group_neutralize(ts_mean(alpha,2),group)",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/20gACr3rX4Sf94G13gK9FjQ",
+    "error":null,
+    "result":"{\"id\": \"20gACr3rX4Sf94G13gK9FjQ\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Attempted to use unknown variable \\\"alpha\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 25, \"end\": 30, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":28,
+    "template_id":16,
+    "expression":"my_group2 = bucket(rank(cap),range='0,1,0.1')",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/2rrXogD74sZ9tV19uPDC3sW",
+    "error":null,
+    "result":"{\"id\": \"2rrXogD74sZ9tV19uPDC3sW\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":29,
+    "template_id":17,
+    "expression":"alpha=rank(group_rank(ts_decay_linear(volume\/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg(historical_volatility_10)),my_group)*group_rank(-ts_delta(close,5),my_group))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/16awTwcAu4Xfc6qRLNaFsH9",
+    "error":null,
+    "result":"{\"id\": \"16awTwcAu4Xfc6qRLNaFsH9\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":30,
+    "template_id":17,
+    "expression":"alpha=rank(group_rank(ts_decay_linear(volume\/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg(historical_volatility_120)),my_group)*group_rank(-ts_delta(close,5),my_group))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/4uLffMdYj4tgapmHW8T0RkA",
+    "error":null,
+    "result":"{\"id\": \"4uLffMdYj4tgapmHW8T0RkA\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":31,
+    "template_id":17,
+    "expression":"alpha=rank(group_rank(ts_decay_linear(volume\/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg(historical_volatility_150)),my_group)*group_rank(-ts_delta(close,5),my_group))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/PJMt94ty4za9Jl3l5ZFh29",
+    "error":null,
+    "result":"{\"id\": \"PJMt94ty4za9Jl3l5ZFh29\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":32,
+    "template_id":17,
+    "expression":"alpha=rank(group_rank(ts_decay_linear(volume\/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg(historical_volatility_180)),my_group)*group_rank(-ts_delta(close,5),my_group))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/2tLbBfgO65jf9Gt1h4da6iju",
+    "error":null,
+    "result":"{\"id\": \"2tLbBfgO65jf9Gt1h4da6iju\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":33,
+    "template_id":18,
+    "expression":"trade_when(volume>adv20,group_neutralize(alpha,my_group2),-1)",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/15A6FPb1m5c49Dy1g1eoNENh",
+    "error":null,
+    "result":"{\"id\": \"15A6FPb1m5c49Dy1g1eoNENh\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Attempted to use unknown variable \\\"alpha\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 41, \"end\": 46, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":34,
+    "template_id":19,
+    "expression":"market_return = group_mean(returns,1,market)",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/1HD5bn3ij4hw9TI1eMyMLqA2",
+    "error":null,
+    "result":"{\"id\": \"1HD5bn3ij4hw9TI1eMyMLqA2\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":35,
+    "template_id":20,
+    "expression":"fear = ts_mean(abs(returns - market_return)\/(abs(returns)+abs(market_return)),20)",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/2sxEu36C35eNbOA1a76rn8m3",
+    "error":null,
+    "result":"{\"id\": \"2sxEu36C35eNbOA1a76rn8m3\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":36,
+    "template_id":21,
+    "expression":"vhat = ts_regression(volume,ts_mean(vec_avg(close),5),120)",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/2sTxUZcdy52vcmQrln7nmAb",
+    "error":null,
+    "result":"{\"id\": \"2sTxUZcdy52vcmQrln7nmAb\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":37,
+    "template_id":22,
+    "expression":"ehat = ts_regression(returns-market_return,vhat,120)",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/3wqUrMgcr4p194OG2molYlF",
+    "error":null,
+    "result":"{\"id\": \"3wqUrMgcr4p194OG2molYlF\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":38,
+    "template_id":23,
+    "expression":"alpha = group_neutralize(-ehat*rank(fear),bucket(rank(cap),range='0,1,0.1'))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/2ycjSfW84ThaMYPOeGaiww",
+    "error":null,
+    "result":"{\"id\": \"2ycjSfW84ThaMYPOeGaiww\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":39,
+    "template_id":24,
+    "expression":"trade_when(abs(returns)<0.075,regression_neut(alpha,volume),abs(returns)>0.1)",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/13CuZP8z75jGbKJ9E4q5zGt",
+    "error":null,
+    "result":"{\"id\": \"13CuZP8z75jGbKJ9E4q5zGt\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Attempted to use inaccessible or unknown operator \\\"regression_neut\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 30, \"end\": 59, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":40,
+    "template_id":25,
+    "expression":"vector_neut(group_neutralize(group_neutralize(ts_arg_max(vec_norm(historical_volatility_10), 220),bucket(rank(assets), range=\"0.1,1,0.1\")),subindustry), group_normalize(ts_delay(cap, 220),subindustry))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/zZcy39Zy4THbMo16rcC6Fyp",
+    "error":null,
+    "result":"{\"id\": \"zZcy39Zy4THbMo16rcC6Fyp\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Attempted to use inaccessible or unknown operator \\\"vector_neut\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 0, \"end\": 201, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  }
+]

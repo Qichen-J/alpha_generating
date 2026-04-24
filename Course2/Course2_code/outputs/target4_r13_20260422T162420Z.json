@@ -1,0 +1,122 @@
+{
+  "T4_V1_subind_d60": {
+    "id": "3qnkME5e",
+    "sharpe": 1.22,
+    "fitness": 0.85,
+    "turnover": 0.2377,
+    "returns": 0.1163,
+    "sub_sharpe": 0.52,
+    "ret_to": 0.48927219183845183,
+    "sha_ok": false,
+    "fit_ok": false,
+    "sub_ok": true,
+    "all_pass": false,
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 1), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_V1_subind_d70": {
+    "id": "A1OrR0nY",
+    "sharpe": 1.19,
+    "fitness": 0.85,
+    "turnover": 0.226,
+    "returns": 0.1164,
+    "sub_sharpe": 0.53,
+    "ret_to": 0.5150442477876106,
+    "sha_ok": false,
+    "fit_ok": false,
+    "sub_ok": true,
+    "all_pass": false,
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 1), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_V2_subind_d63": {
+    "id": "ZYWdRNRd",
+    "sharpe": 1.22,
+    "fitness": 0.88,
+    "turnover": 0.2161,
+    "returns": 0.1136,
+    "sub_sharpe": 0.56,
+    "ret_to": 0.5256825543729755,
+    "sha_ok": false,
+    "fit_ok": false,
+    "sub_ok": true,
+    "all_pass": false,
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 2), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_V2_subind_d70": {
+    "id": "qMmYMrVZ",
+    "sharpe": 1.2,
+    "fitness": 0.89,
+    "turnover": 0.209,
+    "returns": 0.1137,
+    "sub_sharpe": 0.56,
+    "ret_to": 0.5440191387559808,
+    "sha_ok": false,
+    "fit_ok": false,
+    "sub_ok": true,
+    "all_pass": false,
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 2), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_V3vwap_subind_d63": {
+    "id": "QP5NPqEQ",
+    "sharpe": 1.2,
+    "fitness": 0.88,
+    "turnover": 0.2004,
+    "returns": 0.1085,
+    "sub_sharpe": 0.62,
+    "ret_to": 0.5414171656686627,
+    "sha_ok": false,
+    "fit_ok": false,
+    "sub_ok": true,
+    "all_pass": false,
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 3), 126)) * -rank(ts_delta(vwap, 3))"
+  },
+  "T4_V3vwap_subind_d70": {
+    "id": "N15J1R9w",
+    "sharpe": 1.18,
+    "fitness": 0.88,
+    "turnover": 0.1943,
+    "returns": 0.1086,
+    "sub_sharpe": 0.62,
+    "ret_to": 0.5589294904786413,
+    "sha_ok": false,
+    "fit_ok": false,
+    "sub_ok": true,
+    "all_pass": false,
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 3), 126)) * -rank(ts_delta(vwap, 3))"
+  },
+  "T4_RAWV3_subind_d63": {
+    "id": "0mKNmGwr",
+    "sharpe": 1.18,
+    "fitness": 0.87,
+    "turnover": 0.2013,
+    "returns": 0.1095,
+    "sub_sharpe": 0.56,
+    "ret_to": 0.5439642324888226,
+    "sha_ok": false,
+    "fit_ok": false,
+    "sub_ok": true,
+    "all_pass": false,
+    "expression": "rank(ts_zscore(ts_delta(volume, 3), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_RAWV5_subind_d63": {
+    "id": "KPw5P2o8",
+    "sharpe": 1.2,
+    "fitness": 0.9,
+    "turnover": 0.1951,
+    "returns": 0.1092,
+    "sub_sharpe": 0.56,
+    "ret_to": 0.5597129677088672,
+    "sha_ok": false,
+    "fit_ok": false,
+    "sub_ok": true,
+    "all_pass": false,
+    "expression": "rank(ts_zscore(ts_delta(volume, 5), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_RELV_subind_d60": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(volume / adv(20), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_RELV_subind_d70": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(volume / adv(20), 126)) * -rank(ts_delta(close, 3))"
+  }
+}

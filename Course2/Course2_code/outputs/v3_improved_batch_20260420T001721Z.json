@@ -1,0 +1,47 @@
+[
+  {
+    "version": "v3.1",
+    "description": "v3.1 参数延长版 - 更长周期提高稳定性",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 126), 252))",
+    "status": "timeout",
+    "location": "https://api.worldquantbrain.com/simulations/1QruSj96G4Pebdg19fHbpIkl",
+    "error": "Timeout waiting for result",
+    "result_summary": {}
+  },
+  {
+    "version": "v3.2",
+    "description": "v3.2 保守版 - 波动率过滤",
+    "expression": "momentum = ts_zscore(close - ts_mean(close, 63), 126); volatility = ts_std_dev(returns, 20); normalized_vol = ts_rank(volatility, 252); trade_when(normalized_vol > 0.3, -rank(momentum), 0)",
+    "status": "timeout",
+    "location": "https://api.worldquantbrain.com/simulations/1YMA44g0a4RJ92MRfuAHIgr",
+    "error": "Timeout waiting for result",
+    "result_summary": {}
+  },
+  {
+    "version": "v3.3",
+    "description": "v3.3 均衡版 - 中间参数组合",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 84), 168))",
+    "status": "timeout",
+    "location": "https://api.worldquantbrain.com/simulations/1vuZ7Ymd4lXbcDkHOJ1Swf",
+    "error": "Timeout waiting for result",
+    "result_summary": {}
+  },
+  {
+    "version": "v3.4",
+    "description": "v3.4 成交量条件版 - 流动性驱动",
+    "expression": "signal = ts_zscore(close - ts_mean(close, 63), 126); vol_filter = volume > ts_mean(volume, 20); trade_when(vol_filter, -rank(signal), 0)",
+    "status": "timeout",
+    "location": "https://api.worldquantbrain.com/simulations/21Nc0gbjx4B5cxwojP33BMu",
+    "error": "Timeout waiting for result",
+    "result_summary": {}
+  },
+  {
+    "version": "v3.5",
+    "description": "v3.5 高频版 - 更敏感响应",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 42), 84))",
+    "status": "timeout",
+    "location": "https://api.worldquantbrain.com/simulations/s3Q2Y8Lu4Dfag8171tWMZ8L",
+    "error": "Timeout waiting for result",
+    "result_summary": {}
+  }
+]

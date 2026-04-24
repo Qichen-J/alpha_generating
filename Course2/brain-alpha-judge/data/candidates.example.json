@@ -1,0 +1,20 @@
+[
+  {
+    "alpha_id": "replace-with-alpha-id",
+    "expression": "rank(ts_delta(close, 5))",
+    "idea_summary": "The signal looks for short-term price acceleration that may persist across liquid names.",
+    "rationale": "The hypothesis is that recent price acceleration can capture delayed reaction in liquid instruments.",
+    "template_notes": "This is a reusable short-horizon continuation template rather than a one-off expression tuned to a single dataset.",
+    "stability_notes": "Checked on TOP3000 and TOP1000 and compared 2021-2024 versus 2024-2025 slices.",
+    "cross_universe_notes": "The signal is stable on TOP3000 and TOP1000 but degrades on TOP500, so the broader liquid universe is intentional.",
+    "cross_region_notes": "Tried in USA and EUR; USA is materially stronger, so the region choice is deliberate rather than cherry-picked after many failures.",
+    "coverage_notes": "Uses price-volume data with full coverage and no special backfill requirement.",
+    "turnover_notes": "Turnover stays below the current pool median and the highest-turnover names were reviewed before considering submission.",
+    "diversification_notes": "The signal is intended to add a short-horizon price-volume component to a pool dominated by slower model/fundamental signals.",
+    "capacity_notes": "Turnover and liquidity profile were reviewed before considering submission.",
+    "liquidity_notes": "The expression is only considered in liquid universes and does not rely on sparse fields or aggressive backfill.",
+    "portfolio_fit_notes": "Correlation to the currently submitted short-horizon price signals is lower than the pool median, so it fills a real gap.",
+    "submission_priority_notes": "This is the strongest candidate in today's batch; two close variants were withheld because they added little incremental diversification.",
+    "value_factor_notes": "Expected to help value factor through lower prod correlation and a regular signal source not yet present in the current submitted set."
+  }
+]

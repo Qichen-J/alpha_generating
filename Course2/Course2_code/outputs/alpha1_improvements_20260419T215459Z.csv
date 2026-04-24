@@ -1,0 +1,4 @@
+﻿version,description,expression,status,location,error,result_summary
+v1: 简化+事件触发,流动性友好，条件触发降低 turnover,"signal = ts_zscore(close - ts_mean(close, 63), 126); vol_state = ts_rank(ts_std_dev(returns, 20), 252); alpha = group_neutralize(-rank(signal), industry); trade_when(vol_state > 0.6, alpha, -1)",timeout,https://api.worldquantbrain.com/simulations/EcWj83pT4AGaaX7cQfVDQj,,{}
+v2: 中等复杂度,保留多因子但简化，流动性过滤,"momentum_signal = ts_zscore(ts_delta(close, 5), 126); volatility_filter = ts_rank(ts_std_dev(returns, 20), 252); raw_alpha = -rank(momentum_signal) * rank(volatility_filter); alpha = group_neutralize(raw_alpha, industry); trade_when(volume > ts_mean(volume, 20), alpha, -1)",timeout,https://api.worldquantbrain.com/simulations/3Z7EXN7cU5fJbHBHwoshaU0,,{}
+v3: 极简版（推荐）,最高 sub-universe 通过率，单一清晰逻辑,"-rank(ts_zscore(close - ts_mean(close, 63), 126))",timeout,https://api.worldquantbrain.com/simulations/3zLrODayz5fIazU8jFjV717,,{}

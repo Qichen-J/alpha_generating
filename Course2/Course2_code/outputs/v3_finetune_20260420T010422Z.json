@@ -1,0 +1,166 @@
+[
+  {
+    "desc": "A1 参数(60,120)",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 60), 120))",
+    "location": "https://api.worldquantbrain.com/simulations/WZapgpp5b7auGTmWOCZFU",
+    "status": "timeout"
+  },
+  {
+    "desc": "A2 参数(63,120)",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 120))",
+    "location": "https://api.worldquantbrain.com/simulations/29M5aucBC4xl9Es12dyhkcIT",
+    "status": "timeout"
+  },
+  {
+    "desc": "A3 参数(60,126)",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 60), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/3btSVXgVe4Tvaxh1bbWF4wrL",
+    "status": "timeout"
+  },
+  {
+    "desc": "A4 参数(50,126)",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 50), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/3jtqosdlO4Kv9iZWyTmmZse",
+    "status": "timeout"
+  },
+  {
+    "desc": "A5 参数(63,100)",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "location": "https://api.worldquantbrain.com/simulations/39raBr5zt4nz9GrcUTZBqct",
+    "status": "timeout"
+  },
+  {
+    "desc": "A6 参数(63,150)",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 150))",
+    "location": "https://api.worldquantbrain.com/simulations/28H2bs64E4yochdvrcIKm1x",
+    "status": "timeout"
+  },
+  {
+    "desc": "A7 参数(63,63)",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 63))",
+    "location": "https://api.worldquantbrain.com/simulations/4l7B82sd4VDcvKestGe55t",
+    "status": "timeout"
+  },
+  {
+    "desc": "A8 参数(50,100)",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 50), 100))",
+    "location": "https://api.worldquantbrain.com/simulations/31CDgx1Cd5fucvWKJIpZN0a",
+    "status": "timeout"
+  },
+  {
+    "desc": "B decay=5",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/2WyNS76EV4Sn96412QHwr5ro",
+    "status": "timeout"
+  },
+  {
+    "desc": "B decay=8",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/21iMg6gqu4XC8OstruqXHOF",
+    "status": "timeout"
+  },
+  {
+    "desc": "B decay=12",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/2Cg3dIet857t9ZF17bFeHRhC",
+    "status": "timeout"
+  },
+  {
+    "desc": "B decay=15",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/3PD3hI1tj4Bq94wshFcB4tt",
+    "status": "timeout"
+  },
+  {
+    "desc": "C trunc=0.05",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/2CAEPAgTD4SPaqY1arDyT0xd",
+    "status": "timeout"
+  },
+  {
+    "desc": "C trunc=0.06",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/3OdDYi5BJ4Xpb6wLPd8iRo3",
+    "status": "timeout"
+  },
+  {
+    "desc": "C trunc=0.1",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/1uipXKcKE57k9PkdBO1fiMf",
+    "status": "timeout"
+  },
+  {
+    "desc": "C trunc=0.12",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/ZzZwigvE4n58Ne1esPtqNC6",
+    "status": "timeout"
+  },
+  {
+    "desc": "D neut=SUBINDUSTRY",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/dajHnazF4nnaKghaNCLD5K",
+    "alpha_id": "zqJYVrnO",
+    "sharpe": 1.08,
+    "fitness": 0.87,
+    "turnover": 0.0914,
+    "drawdown": 0.0838,
+    "checks": {
+      "LOW_SHARPE": "FAIL",
+      "LOW_FITNESS": "FAIL",
+      "LOW_TURNOVER": "PASS",
+      "HIGH_TURNOVER": "PASS",
+      "CONCENTRATED_WEIGHT": "PASS",
+      "LOW_SUB_UNIVERSE_SHARPE": "FAIL",
+      "SELF_CORRELATION": "PENDING",
+      "MATCHES_COMPETITION": "PASS"
+    },
+    "settings_diff": {
+      "neutralization": "SUBINDUSTRY"
+    }
+  },
+  {
+    "desc": "D neut=MARKET",
+    "expression": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/35w3Lt2v95g59w41d0NhQXh",
+    "status": "timeout"
+  },
+  {
+    "desc": "E1 vwap替代close",
+    "expression": "-rank(ts_zscore(vwap - ts_mean(vwap, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/2HpZLZJZ4rscmSmPGCssO3",
+    "alpha_id": "Gr3dR78Z",
+    "sharpe": 0.89,
+    "fitness": 0.7,
+    "turnover": 0.0876,
+    "drawdown": 0.0852,
+    "checks": {
+      "LOW_SHARPE": "FAIL",
+      "LOW_FITNESS": "FAIL",
+      "LOW_TURNOVER": "PASS",
+      "HIGH_TURNOVER": "PASS",
+      "CONCENTRATED_WEIGHT": "PASS",
+      "LOW_SUB_UNIVERSE_SHARPE": "PASS",
+      "SELF_CORRELATION": "PENDING",
+      "MATCHES_COMPETITION": "PASS"
+    },
+    "settings_diff": {}
+  },
+  {
+    "desc": "E2 group_rank",
+    "expression": "-group_rank(ts_zscore(close - ts_mean(close, 63), 126), industry)",
+    "location": "https://api.worldquantbrain.com/simulations/1PNJHB6Qk4AdcDzaj9usN6d",
+    "status": "timeout"
+  },
+  {
+    "desc": "E3 ts_rank(252)",
+    "expression": "-ts_rank(ts_zscore(close - ts_mean(close, 63), 126), 252)",
+    "location": "https://api.worldquantbrain.com/simulations/1SZM6L2Ah4IvaAs1dTIWRyp7",
+    "status": "timeout"
+  },
+  {
+    "desc": "E4 sign替代rank",
+    "expression": "-sign(ts_zscore(close - ts_mean(close, 63), 126))",
+    "location": "https://api.worldquantbrain.com/simulations/3S8FkE4ZW5iD8HF93gI2W96",
+    "status": "timeout"
+  }
+]

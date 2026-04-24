@@ -1,0 +1,890 @@
+[
+  {
+    "alpha_id": "None",
+    "candidate_label": "None",
+    "platform": {
+      "available": false,
+      "platform_submit_ok": false,
+      "failed_checks": []
+    },
+    "value_factor_trend": {
+      "available": false,
+      "reason": "client_unavailable",
+      "start_date": "2025-04-19T21:01:49Z",
+      "end_date": "2026-04-19T21:01:49Z"
+    },
+    "value_factor_projection": {
+      "available": false,
+      "reason": "trend_unavailable"
+    },
+    "expression_analysis": {
+      "operator_count": 2,
+      "unique_operator_count": 2,
+      "conditional_count": 0,
+      "distinct_windows": [
+        126
+      ],
+      "noncanonical_windows": []
+    },
+    "extra": {
+      "overall": "review",
+      "rules": [
+        {
+          "id": "economic_foundation",
+          "title": "Economic foundation",
+          "status": "review",
+          "description": "Document the economic mechanism clearly enough to explain it briefly.",
+          "reasons": [
+            "Missing required fields: idea_summary, rationale"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "Signal purification is explained as a concrete market-relative template rather than an opaque formula."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author stresses alpha quality as something that should survive markets rather than cosmetic tuning."
+            }
+          ]
+        },
+        {
+          "id": "template_generalizability",
+          "title": "Template generalizability",
+          "status": "review",
+          "description": "Prefer structures that can be described as reusable templates or data-transformation patterns, not one-off curve fits.",
+          "reasons": [
+            "Need at least one supporting field: template_notes, stability_notes, cross_universe_notes, cross_region_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "The shared alpha is explicitly framed as a template that can be iterated across analysts and data fields."
+            },
+            {
+              "post_id": "31070381814295",
+              "author": "JJ47083",
+              "note": "The post highlights that poor first-order templates create high correlation and weak quality."
+            }
+          ]
+        },
+        {
+          "id": "implementation_simplicity",
+          "title": "Implementation simplicity",
+          "status": "pass",
+          "description": "Prefer simple implementations without unnecessary moving parts, especially when unusual windows or controls are piled onto the signal.",
+          "reasons": [],
+          "source_posts": [
+            {
+              "post_id": "29083873126551",
+              "author": "XX42289",
+              "note": "The operator survey shows a compact core used by many higher-stage consultants."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The PPAC world-first note reports operator average mostly between 1 and 3."
+            }
+          ]
+        },
+        {
+          "id": "diversification_and_correlation",
+          "title": "Diversification and correlation discipline",
+          "status": "review",
+          "description": "Explain portfolio fit and avoid candidates whose self or prod correlation is already too close to the existing pool.",
+          "reasons": [
+            "Need at least one supporting field: diversification_notes, portfolio_fit_notes, value_factor_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "The author warns against concentrating on one dataset and uses low self-correlation as a selection rule."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author directly ties low self and prod correlation to more stable combine and value-factor behavior."
+            }
+          ]
+        },
+        {
+          "id": "anti_overfitting_evidence",
+          "title": "Anti-overfitting evidence",
+          "status": "review",
+          "description": "Show evidence that the alpha was not tuned only for one narrow path.",
+          "reasons": [
+            "Need at least one supporting field: stability_notes, cross_universe_notes, cross_region_notes, test_period_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "The post frames the signal as something that should generalize across multiple analyst and data-field substitutions."
+            },
+            {
+              "post_id": "33745762241175",
+              "author": "JJ47083",
+              "note": "The author repeatedly rechecks regions, universes, and selection strictness before submission."
+            }
+          ]
+        },
+        {
+          "id": "coverage_turnover_awareness",
+          "title": "Coverage and turnover awareness",
+          "status": "review",
+          "description": "Describe coverage handling, turnover control, and liquidity or universe composition before submission.",
+          "reasons": [
+            "Need at least one supporting field: coverage_notes, turnover_notes, liquidity_notes, capacity_notes, cross_universe_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "33745762241175",
+              "author": "JJ47083",
+              "note": "The SAC sharing explicitly filters by universe composition and turnover buckets before ranking selected alphas."
+            },
+            {
+              "post_id": "33394390003095",
+              "author": "ZV96737",
+              "note": "The Master reflection focuses on refining country-specific alpha construction and backtesting."
+            }
+          ]
+        },
+        {
+          "id": "quality_over_quantity",
+          "title": "Quality over quantity",
+          "status": "review",
+          "description": "Explain why this alpha deserves a submission slot now instead of being added only to increase count.",
+          "reasons": [
+            "Need at least one supporting field: submission_priority_notes, rationale, value_factor_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "The author explicitly says low-quality submissions cannot be withdrawn, so quality should dominate count."
+            },
+            {
+              "post_id": "29383292162199",
+              "author": "XX42289",
+              "note": "Stage progress is framed through count, pyramid, and combined metrics rather than raw daily churn."
+            }
+          ]
+        },
+        {
+          "id": "value_factor_alignment",
+          "title": "Value factor alignment",
+          "status": "review",
+          "description": "Explain how the alpha helps longer-term contribution after submission through diversification, lower problematic correlation, or stronger regular-alpha quality.",
+          "reasons": [
+            "Need at least one supporting field: value_factor_notes, diversification_notes, capacity_notes, portfolio_fit_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "Value factor is described as improving only after enough good regulars are accumulated."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author gives concrete regular-vs-SA advice for combine and value-factor improvement."
+            }
+          ]
+        }
+      ]
+    },
+    "deterministic_verdict": "REVIEW",
+    "llm_decision": {
+      "available": false,
+      "reason": "missing_api_key"
+    },
+    "overall_verdict": "REVIEW",
+    "platform_submit_ok": false,
+    "worth_submit_now": false,
+    "submit_action": "not_attempted",
+    "suggestions": [
+      {
+        "title": "补齐提交叙述证据（避免 REVIEW）",
+        "actions": [
+          "至少补齐 idea_summary 与 rationale。",
+          "补充 template_notes / stability_notes / portfolio_fit_notes / value_factor_notes。",
+          "把关键实验写入 cross_universe_notes 与 cross_region_notes。"
+        ],
+        "evidence": [
+          "extra_submission_rubric.json rules"
+        ]
+      }
+    ]
+  },
+  {
+    "alpha_id": "None",
+    "candidate_label": "None",
+    "platform": {
+      "available": false,
+      "platform_submit_ok": false,
+      "failed_checks": []
+    },
+    "value_factor_trend": {
+      "available": false,
+      "reason": "client_unavailable",
+      "start_date": "2025-04-19T21:01:49Z",
+      "end_date": "2026-04-19T21:01:49Z"
+    },
+    "value_factor_projection": {
+      "available": false,
+      "reason": "trend_unavailable"
+    },
+    "expression_analysis": {
+      "operator_count": 6,
+      "unique_operator_count": 3,
+      "conditional_count": 0,
+      "distinct_windows": [
+        1,
+        20
+      ],
+      "noncanonical_windows": []
+    },
+    "extra": {
+      "overall": "review",
+      "rules": [
+        {
+          "id": "economic_foundation",
+          "title": "Economic foundation",
+          "status": "review",
+          "description": "Document the economic mechanism clearly enough to explain it briefly.",
+          "reasons": [
+            "Missing required fields: idea_summary, rationale"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "Signal purification is explained as a concrete market-relative template rather than an opaque formula."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author stresses alpha quality as something that should survive markets rather than cosmetic tuning."
+            }
+          ]
+        },
+        {
+          "id": "template_generalizability",
+          "title": "Template generalizability",
+          "status": "review",
+          "description": "Prefer structures that can be described as reusable templates or data-transformation patterns, not one-off curve fits.",
+          "reasons": [
+            "Need at least one supporting field: template_notes, stability_notes, cross_universe_notes, cross_region_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "The shared alpha is explicitly framed as a template that can be iterated across analysts and data fields."
+            },
+            {
+              "post_id": "31070381814295",
+              "author": "JJ47083",
+              "note": "The post highlights that poor first-order templates create high correlation and weak quality."
+            }
+          ]
+        },
+        {
+          "id": "implementation_simplicity",
+          "title": "Implementation simplicity",
+          "status": "pass",
+          "description": "Prefer simple implementations without unnecessary moving parts, especially when unusual windows or controls are piled onto the signal.",
+          "reasons": [],
+          "source_posts": [
+            {
+              "post_id": "29083873126551",
+              "author": "XX42289",
+              "note": "The operator survey shows a compact core used by many higher-stage consultants."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The PPAC world-first note reports operator average mostly between 1 and 3."
+            }
+          ]
+        },
+        {
+          "id": "diversification_and_correlation",
+          "title": "Diversification and correlation discipline",
+          "status": "review",
+          "description": "Explain portfolio fit and avoid candidates whose self or prod correlation is already too close to the existing pool.",
+          "reasons": [
+            "Need at least one supporting field: diversification_notes, portfolio_fit_notes, value_factor_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "The author warns against concentrating on one dataset and uses low self-correlation as a selection rule."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author directly ties low self and prod correlation to more stable combine and value-factor behavior."
+            }
+          ]
+        },
+        {
+          "id": "anti_overfitting_evidence",
+          "title": "Anti-overfitting evidence",
+          "status": "review",
+          "description": "Show evidence that the alpha was not tuned only for one narrow path.",
+          "reasons": [
+            "Need at least one supporting field: stability_notes, cross_universe_notes, cross_region_notes, test_period_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "The post frames the signal as something that should generalize across multiple analyst and data-field substitutions."
+            },
+            {
+              "post_id": "33745762241175",
+              "author": "JJ47083",
+              "note": "The author repeatedly rechecks regions, universes, and selection strictness before submission."
+            }
+          ]
+        },
+        {
+          "id": "coverage_turnover_awareness",
+          "title": "Coverage and turnover awareness",
+          "status": "review",
+          "description": "Describe coverage handling, turnover control, and liquidity or universe composition before submission.",
+          "reasons": [
+            "Need at least one supporting field: coverage_notes, turnover_notes, liquidity_notes, capacity_notes, cross_universe_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "33745762241175",
+              "author": "JJ47083",
+              "note": "The SAC sharing explicitly filters by universe composition and turnover buckets before ranking selected alphas."
+            },
+            {
+              "post_id": "33394390003095",
+              "author": "ZV96737",
+              "note": "The Master reflection focuses on refining country-specific alpha construction and backtesting."
+            }
+          ]
+        },
+        {
+          "id": "quality_over_quantity",
+          "title": "Quality over quantity",
+          "status": "review",
+          "description": "Explain why this alpha deserves a submission slot now instead of being added only to increase count.",
+          "reasons": [
+            "Need at least one supporting field: submission_priority_notes, rationale, value_factor_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "The author explicitly says low-quality submissions cannot be withdrawn, so quality should dominate count."
+            },
+            {
+              "post_id": "29383292162199",
+              "author": "XX42289",
+              "note": "Stage progress is framed through count, pyramid, and combined metrics rather than raw daily churn."
+            }
+          ]
+        },
+        {
+          "id": "value_factor_alignment",
+          "title": "Value factor alignment",
+          "status": "review",
+          "description": "Explain how the alpha helps longer-term contribution after submission through diversification, lower problematic correlation, or stronger regular-alpha quality.",
+          "reasons": [
+            "Need at least one supporting field: value_factor_notes, diversification_notes, capacity_notes, portfolio_fit_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "Value factor is described as improving only after enough good regulars are accumulated."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author gives concrete regular-vs-SA advice for combine and value-factor improvement."
+            }
+          ]
+        }
+      ]
+    },
+    "deterministic_verdict": "REVIEW",
+    "llm_decision": {
+      "available": false,
+      "reason": "missing_api_key"
+    },
+    "overall_verdict": "REVIEW",
+    "platform_submit_ok": false,
+    "worth_submit_now": false,
+    "submit_action": "not_attempted",
+    "suggestions": [
+      {
+        "title": "补齐提交叙述证据（避免 REVIEW）",
+        "actions": [
+          "至少补齐 idea_summary 与 rationale。",
+          "补充 template_notes / stability_notes / portfolio_fit_notes / value_factor_notes。",
+          "把关键实验写入 cross_universe_notes 与 cross_region_notes。"
+        ],
+        "evidence": [
+          "extra_submission_rubric.json rules"
+        ]
+      }
+    ]
+  },
+  {
+    "alpha_id": "None",
+    "candidate_label": "None",
+    "platform": {
+      "available": false,
+      "platform_submit_ok": false,
+      "failed_checks": []
+    },
+    "value_factor_trend": {
+      "available": false,
+      "reason": "client_unavailable",
+      "start_date": "2025-04-19T21:01:49Z",
+      "end_date": "2026-04-19T21:01:49Z"
+    },
+    "value_factor_projection": {
+      "available": false,
+      "reason": "trend_unavailable"
+    },
+    "expression_analysis": {
+      "operator_count": 12,
+      "unique_operator_count": 10,
+      "conditional_count": 0,
+      "distinct_windows": [
+        1,
+        2,
+        20,
+        60
+      ],
+      "noncanonical_windows": []
+    },
+    "extra": {
+      "overall": "review",
+      "rules": [
+        {
+          "id": "economic_foundation",
+          "title": "Economic foundation",
+          "status": "review",
+          "description": "Document the economic mechanism clearly enough to explain it briefly.",
+          "reasons": [
+            "Missing required fields: idea_summary, rationale"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "Signal purification is explained as a concrete market-relative template rather than an opaque formula."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author stresses alpha quality as something that should survive markets rather than cosmetic tuning."
+            }
+          ]
+        },
+        {
+          "id": "template_generalizability",
+          "title": "Template generalizability",
+          "status": "review",
+          "description": "Prefer structures that can be described as reusable templates or data-transformation patterns, not one-off curve fits.",
+          "reasons": [
+            "Need at least one supporting field: template_notes, stability_notes, cross_universe_notes, cross_region_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "The shared alpha is explicitly framed as a template that can be iterated across analysts and data fields."
+            },
+            {
+              "post_id": "31070381814295",
+              "author": "JJ47083",
+              "note": "The post highlights that poor first-order templates create high correlation and weak quality."
+            }
+          ]
+        },
+        {
+          "id": "implementation_simplicity",
+          "title": "Implementation simplicity",
+          "status": "pass",
+          "description": "Prefer simple implementations without unnecessary moving parts, especially when unusual windows or controls are piled onto the signal.",
+          "reasons": [],
+          "source_posts": [
+            {
+              "post_id": "29083873126551",
+              "author": "XX42289",
+              "note": "The operator survey shows a compact core used by many higher-stage consultants."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The PPAC world-first note reports operator average mostly between 1 and 3."
+            }
+          ]
+        },
+        {
+          "id": "diversification_and_correlation",
+          "title": "Diversification and correlation discipline",
+          "status": "review",
+          "description": "Explain portfolio fit and avoid candidates whose self or prod correlation is already too close to the existing pool.",
+          "reasons": [
+            "Need at least one supporting field: diversification_notes, portfolio_fit_notes, value_factor_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "The author warns against concentrating on one dataset and uses low self-correlation as a selection rule."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author directly ties low self and prod correlation to more stable combine and value-factor behavior."
+            }
+          ]
+        },
+        {
+          "id": "anti_overfitting_evidence",
+          "title": "Anti-overfitting evidence",
+          "status": "review",
+          "description": "Show evidence that the alpha was not tuned only for one narrow path.",
+          "reasons": [
+            "Need at least one supporting field: stability_notes, cross_universe_notes, cross_region_notes, test_period_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "The post frames the signal as something that should generalize across multiple analyst and data-field substitutions."
+            },
+            {
+              "post_id": "33745762241175",
+              "author": "JJ47083",
+              "note": "The author repeatedly rechecks regions, universes, and selection strictness before submission."
+            }
+          ]
+        },
+        {
+          "id": "coverage_turnover_awareness",
+          "title": "Coverage and turnover awareness",
+          "status": "review",
+          "description": "Describe coverage handling, turnover control, and liquidity or universe composition before submission.",
+          "reasons": [
+            "Need at least one supporting field: coverage_notes, turnover_notes, liquidity_notes, capacity_notes, cross_universe_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "33745762241175",
+              "author": "JJ47083",
+              "note": "The SAC sharing explicitly filters by universe composition and turnover buckets before ranking selected alphas."
+            },
+            {
+              "post_id": "33394390003095",
+              "author": "ZV96737",
+              "note": "The Master reflection focuses on refining country-specific alpha construction and backtesting."
+            }
+          ]
+        },
+        {
+          "id": "quality_over_quantity",
+          "title": "Quality over quantity",
+          "status": "review",
+          "description": "Explain why this alpha deserves a submission slot now instead of being added only to increase count.",
+          "reasons": [
+            "Need at least one supporting field: submission_priority_notes, rationale, value_factor_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "The author explicitly says low-quality submissions cannot be withdrawn, so quality should dominate count."
+            },
+            {
+              "post_id": "29383292162199",
+              "author": "XX42289",
+              "note": "Stage progress is framed through count, pyramid, and combined metrics rather than raw daily churn."
+            }
+          ]
+        },
+        {
+          "id": "value_factor_alignment",
+          "title": "Value factor alignment",
+          "status": "review",
+          "description": "Explain how the alpha helps longer-term contribution after submission through diversification, lower problematic correlation, or stronger regular-alpha quality.",
+          "reasons": [
+            "Need at least one supporting field: value_factor_notes, diversification_notes, capacity_notes, portfolio_fit_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "Value factor is described as improving only after enough good regulars are accumulated."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author gives concrete regular-vs-SA advice for combine and value-factor improvement."
+            }
+          ]
+        }
+      ]
+    },
+    "deterministic_verdict": "REVIEW",
+    "llm_decision": {
+      "available": false,
+      "reason": "missing_api_key"
+    },
+    "overall_verdict": "REVIEW",
+    "platform_submit_ok": false,
+    "worth_submit_now": false,
+    "submit_action": "not_attempted",
+    "suggestions": [
+      {
+        "title": "补齐提交叙述证据（避免 REVIEW）",
+        "actions": [
+          "至少补齐 idea_summary 与 rationale。",
+          "补充 template_notes / stability_notes / portfolio_fit_notes / value_factor_notes。",
+          "把关键实验写入 cross_universe_notes 与 cross_region_notes。"
+        ],
+        "evidence": [
+          "extra_submission_rubric.json rules"
+        ]
+      }
+    ]
+  },
+  {
+    "alpha_id": "None",
+    "candidate_label": "None",
+    "platform": {
+      "available": false,
+      "platform_submit_ok": false,
+      "failed_checks": []
+    },
+    "value_factor_trend": {
+      "available": false,
+      "reason": "client_unavailable",
+      "start_date": "2025-04-19T21:01:49Z",
+      "end_date": "2026-04-19T21:01:49Z"
+    },
+    "value_factor_projection": {
+      "available": false,
+      "reason": "trend_unavailable"
+    },
+    "expression_analysis": {
+      "operator_count": 2,
+      "unique_operator_count": 2,
+      "conditional_count": 0,
+      "distinct_windows": [
+        60
+      ],
+      "noncanonical_windows": []
+    },
+    "extra": {
+      "overall": "review",
+      "rules": [
+        {
+          "id": "economic_foundation",
+          "title": "Economic foundation",
+          "status": "review",
+          "description": "Document the economic mechanism clearly enough to explain it briefly.",
+          "reasons": [
+            "Missing required fields: idea_summary, rationale"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "Signal purification is explained as a concrete market-relative template rather than an opaque formula."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author stresses alpha quality as something that should survive markets rather than cosmetic tuning."
+            }
+          ]
+        },
+        {
+          "id": "template_generalizability",
+          "title": "Template generalizability",
+          "status": "review",
+          "description": "Prefer structures that can be described as reusable templates or data-transformation patterns, not one-off curve fits.",
+          "reasons": [
+            "Need at least one supporting field: template_notes, stability_notes, cross_universe_notes, cross_region_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "The shared alpha is explicitly framed as a template that can be iterated across analysts and data fields."
+            },
+            {
+              "post_id": "31070381814295",
+              "author": "JJ47083",
+              "note": "The post highlights that poor first-order templates create high correlation and weak quality."
+            }
+          ]
+        },
+        {
+          "id": "implementation_simplicity",
+          "title": "Implementation simplicity",
+          "status": "pass",
+          "description": "Prefer simple implementations without unnecessary moving parts, especially when unusual windows or controls are piled onto the signal.",
+          "reasons": [],
+          "source_posts": [
+            {
+              "post_id": "29083873126551",
+              "author": "XX42289",
+              "note": "The operator survey shows a compact core used by many higher-stage consultants."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The PPAC world-first note reports operator average mostly between 1 and 3."
+            }
+          ]
+        },
+        {
+          "id": "diversification_and_correlation",
+          "title": "Diversification and correlation discipline",
+          "status": "review",
+          "description": "Explain portfolio fit and avoid candidates whose self or prod correlation is already too close to the existing pool.",
+          "reasons": [
+            "Need at least one supporting field: diversification_notes, portfolio_fit_notes, value_factor_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "The author warns against concentrating on one dataset and uses low self-correlation as a selection rule."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author directly ties low self and prod correlation to more stable combine and value-factor behavior."
+            }
+          ]
+        },
+        {
+          "id": "anti_overfitting_evidence",
+          "title": "Anti-overfitting evidence",
+          "status": "review",
+          "description": "Show evidence that the alpha was not tuned only for one narrow path.",
+          "reasons": [
+            "Need at least one supporting field: stability_notes, cross_universe_notes, cross_region_notes, test_period_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "The post frames the signal as something that should generalize across multiple analyst and data-field substitutions."
+            },
+            {
+              "post_id": "33745762241175",
+              "author": "JJ47083",
+              "note": "The author repeatedly rechecks regions, universes, and selection strictness before submission."
+            }
+          ]
+        },
+        {
+          "id": "coverage_turnover_awareness",
+          "title": "Coverage and turnover awareness",
+          "status": "review",
+          "description": "Describe coverage handling, turnover control, and liquidity or universe composition before submission.",
+          "reasons": [
+            "Need at least one supporting field: coverage_notes, turnover_notes, liquidity_notes, capacity_notes, cross_universe_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "33745762241175",
+              "author": "JJ47083",
+              "note": "The SAC sharing explicitly filters by universe composition and turnover buckets before ranking selected alphas."
+            },
+            {
+              "post_id": "33394390003095",
+              "author": "ZV96737",
+              "note": "The Master reflection focuses on refining country-specific alpha construction and backtesting."
+            }
+          ]
+        },
+        {
+          "id": "quality_over_quantity",
+          "title": "Quality over quantity",
+          "status": "review",
+          "description": "Explain why this alpha deserves a submission slot now instead of being added only to increase count.",
+          "reasons": [
+            "Need at least one supporting field: submission_priority_notes, rationale, value_factor_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "The author explicitly says low-quality submissions cannot be withdrawn, so quality should dominate count."
+            },
+            {
+              "post_id": "29383292162199",
+              "author": "XX42289",
+              "note": "Stage progress is framed through count, pyramid, and combined metrics rather than raw daily churn."
+            }
+          ]
+        },
+        {
+          "id": "value_factor_alignment",
+          "title": "Value factor alignment",
+          "status": "review",
+          "description": "Explain how the alpha helps longer-term contribution after submission through diversification, lower problematic correlation, or stronger regular-alpha quality.",
+          "reasons": [
+            "Need at least one supporting field: value_factor_notes, diversification_notes, capacity_notes, portfolio_fit_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "Value factor is described as improving only after enough good regulars are accumulated."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author gives concrete regular-vs-SA advice for combine and value-factor improvement."
+            }
+          ]
+        }
+      ]
+    },
+    "deterministic_verdict": "REVIEW",
+    "llm_decision": {
+      "available": false,
+      "reason": "missing_api_key"
+    },
+    "overall_verdict": "REVIEW",
+    "platform_submit_ok": false,
+    "worth_submit_now": false,
+    "submit_action": "not_attempted",
+    "suggestions": [
+      {
+        "title": "补齐提交叙述证据（避免 REVIEW）",
+        "actions": [
+          "至少补齐 idea_summary 与 rationale。",
+          "补充 template_notes / stability_notes / portfolio_fit_notes / value_factor_notes。",
+          "把关键实验写入 cross_universe_notes 与 cross_region_notes。"
+        ],
+        "evidence": [
+          "extra_submission_rubric.json rules"
+        ]
+      }
+    ]
+  }
+]

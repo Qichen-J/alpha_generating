@@ -1,0 +1,104 @@
+[
+  {
+    "desc": "combo1: (63,100)+decay5",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "sharpe": 1.14,
+    "fitness": 1.02,
+    "turnover": 0.1212,
+    "drawdown": 0.0798,
+    "sub_result": "PASS",
+    "sub_value": 0.5,
+    "alpha_id": "WjWPvaJo",
+    "location": "https://api.worldquantbrain.com/simulations/3KuOuY62L4xyaXUDnq46nRT"
+  },
+  {
+    "desc": "combo2: (63,100)+decay6",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "location": "https://api.worldquantbrain.com/simulations/4FQ6XKded540bD0acZ1gRAW",
+    "status": "timeout"
+  },
+  {
+    "desc": "combo3: (63,100)+decay7",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "location": "https://api.worldquantbrain.com/simulations/2aGZ2V5Cw4Iy8SuIELvt2zL",
+    "status": "timeout"
+  },
+  {
+    "desc": "combo4: (63,100)+decay4",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "location": "https://api.worldquantbrain.com/simulations/3R7bwz8YX4uab1YWuBQc4TD",
+    "status": "timeout"
+  },
+  {
+    "desc": "combo5: (63,100)+decay5+SUBIND",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "sharpe": 1.27,
+    "fitness": 1.11,
+    "turnover": 0.1261,
+    "drawdown": 0.0782,
+    "sub_result": "FAIL",
+    "sub_value": 0.5,
+    "alpha_id": "gJoQn5vQ",
+    "location": "https://api.worldquantbrain.com/simulations/1k7ClVcBC4Ct9BFFF3dzqys"
+  },
+  {
+    "desc": "combo6: (60,100)+decay5",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 60), 100))",
+    "location": "https://api.worldquantbrain.com/simulations/441Sqyb5K4FDasYCEdLOb2T",
+    "status": "timeout"
+  },
+  {
+    "desc": "combo7: (50,100)+decay5",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 50), 100))",
+    "sharpe": 1.06,
+    "fitness": 0.9,
+    "turnover": 0.1304,
+    "drawdown": 0.0863,
+    "sub_result": "FAIL",
+    "sub_value": 0.42,
+    "alpha_id": "1YnXq96m",
+    "location": "https://api.worldquantbrain.com/simulations/10PkkL5Wv4UpckOlbDI7rZC"
+  },
+  {
+    "desc": "combo8: (63,80)+decay5",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 80))",
+    "location": "https://api.worldquantbrain.com/simulations/2qHF8Gb1b4S3b6GpYlEcZcs",
+    "status": "timeout"
+  },
+  {
+    "desc": "combo9: group_rank+decay5",
+    "expr": "-group_rank(ts_zscore(close - ts_mean(close, 63), 100), industry)",
+    "sharpe": 1.18,
+    "fitness": 1.03,
+    "turnover": 0.1225,
+    "drawdown": 0.0739,
+    "sub_result": "PASS",
+    "sub_value": 0.55,
+    "alpha_id": "E5rpZam0",
+    "location": "https://api.worldquantbrain.com/simulations/29X6NW9Ax4Jy9PGkh5Nviz5"
+  },
+  {
+    "desc": "combo11: (63,100)+decay3",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "sharpe": 1.22,
+    "fitness": 1.05,
+    "turnover": 0.1486,
+    "drawdown": 0.0763,
+    "sub_result": "PASS",
+    "sub_value": 0.58,
+    "alpha_id": "qMmxKXzE",
+    "location": "https://api.worldquantbrain.com/simulations/38CIII4Xn4zPanMJ5oEwBJ7"
+  },
+  {
+    "desc": "combo12: 原始+decay5",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 126))",
+    "sharpe": 1.03,
+    "fitness": 0.88,
+    "turnover": 0.1155,
+    "drawdown": 0.0835,
+    "sub_result": "PASS",
+    "sub_value": 0.48,
+    "alpha_id": "wpJYddYd",
+    "location": "https://api.worldquantbrain.com/simulations/2yw1KaaG14Iu9yC9EDSKtoA"
+  }
+]

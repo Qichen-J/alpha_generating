@@ -1,0 +1,102 @@
+[
+  {
+    "idx":1,
+    "template_id":1,
+    "expression":"vec_avg(historical_volatility_10),sector),bucket(rank(cap),range=\"0.1,1,0.1\")),\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/RLHSV7wG4Lfc0iwuSHv7uS",
+    "error":null,
+    "result":"{\"id\": \"RLHSV7wG4Lfc0iwuSHv7uS\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"tility_10),sector),b\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 33, \"end\": 34, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":2,
+    "template_id":1,
+    "expression":"vec_avg(historical_volatility_120),sector),bucket(rank(cap),range=\"0.1,1,0.1\")),\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/12vITqgpd5fic2K4KaTw4mO",
+    "error":null,
+    "result":"{\"id\": \"12vITqgpd5fic2K4KaTw4mO\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ility_120),sector),b\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 34, \"end\": 35, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":3,
+    "template_id":1,
+    "expression":"vec_avg(historical_volatility_150),sector),bucket(rank(cap),range=\"0.1,1,0.1\")),\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/1BIwKwgIW4wZ8MTbFs0imeS",
+    "error":null,
+    "result":"{\"id\": \"1BIwKwgIW4wZ8MTbFs0imeS\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ility_150),sector),b\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 34, \"end\": 35, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":4,
+    "template_id":1,
+    "expression":"vec_avg(historical_volatility_180),sector),bucket(rank(cap),range=\"0.1,1,0.1\")),\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/39Q1OKf7a4sr9QDDIPLGbEc",
+    "error":null,
+    "result":"{\"id\": \"39Q1OKf7a4sr9QDDIPLGbEc\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ility_180),sector),b\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 34, \"end\": 35, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":5,
+    "template_id":2,
+    "expression":"group_neutralize(group_zscore(cap,sector),bucket(rank(cap),range=\"0.1,1,0.1\"))),\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/Sj8Kx9xO50dbz1QdviyKRb",
+    "error":null,
+    "result":"{\"id\": \"Sj8Kx9xO50dbz1QdviyKRb\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ')' near \\\"1,1,0.1\\\"))),\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 78, \"end\": 79, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":6,
+    "template_id":3,
+    "expression":"ts_ir(returns-group_median(returns,sector),126))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/Rehhd3Pn4hfbKLG4KrsKN5",
+    "error":null,
+    "result":"{\"id\": \"Rehhd3Pn4hfbKLG4KrsKN5\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ')' near \\\"ctor),126))\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 47, \"end\": 48, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":7,
+    "template_id":4,
+    "expression":"fear = ts_mean(abs(returns - group_mean(returns,1,market))\/(abs(returns)+abs(group_mean(returns,1,market))+0.1),20);\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/1617J8gBI4nxa9qyWeFwP2g",
+    "error":null,
+    "result":"{\"id\": \"1617J8gBI4nxa9qyWeFwP2g\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"+0.1),20);\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 116, \"end\": 117, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":8,
+    "template_id":5,
+    "expression":"-group_neutralize(fear*group_normalize(ts_decay_exp_window(ts_percentage(vec_count(rsk82_raw_m3g_tni_p_su_fte),60,percentage=0.9)\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/2t5lqo7if4v398C1gy68TPZo",
+    "error":null,
+    "result":"{\"id\": \"2t5lqo7if4v398C1gy68TPZo\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character '\\\\' near \\\"ntage=0.9)\\\\\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 129, \"end\": 130, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":9,
+    "template_id":6,
+    "expression":"-ts_percentage(vec_count(historical_volatility_10),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/JAOP5em84ZA9CaQFe88KgI",
+    "error":null,
+    "result":"{\"id\": \"JAOP5em84ZA9CaQFe88KgI\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ntage=0.1),20, facto\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 69, \"end\": 70, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":10,
+    "template_id":6,
+    "expression":"-ts_percentage(vec_count(historical_volatility_120),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\\",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/3tCoAw5ng4Uq9Uc52lHjKg5",
+    "error":null,
+    "result":"{\"id\": \"3tCoAw5ng4Uq9Uc52lHjKg5\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected character ',' near \\\"ntage=0.1),20, facto\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 70, \"end\": 71, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  }
+]

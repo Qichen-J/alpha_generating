@@ -1,0 +1,91 @@
+[
+  {
+    "name": "R2_decay8_subind",
+    "alpha_id": "2rnmOd7Y",
+    "sharpe": 1.26,
+    "fitness": 0.74,
+    "turnover": 0.2245,
+    "returns": 0.0776,
+    "sub_pass": false,
+    "sub_value": 0.38,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R2_decay12_subind",
+    "alpha_id": "A1OvlVLY",
+    "sharpe": 1.27,
+    "fitness": 0.83,
+    "turnover": 0.1785,
+    "returns": 0.0767,
+    "sub_pass": false,
+    "sub_value": 0.38,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R2_tsdecay5",
+    "alpha_id": "wpJbQbeY",
+    "sharpe": 1.15,
+    "fitness": 0.63,
+    "turnover": 0.2353,
+    "returns": 0.0701,
+    "sub_pass": false,
+    "sub_value": 0.24,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R2_tsdecay10",
+    "alpha_id": "om9WEx62",
+    "sharpe": 1.09,
+    "fitness": 0.66,
+    "turnover": 0.1832,
+    "returns": 0.0669,
+    "sub_pass": false,
+    "sub_value": 0.25,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R2_trunc01_d8",
+    "alpha_id": "QP5K0mRX",
+    "sharpe": 1.26,
+    "fitness": 0.74,
+    "turnover": 0.2245,
+    "returns": 0.0776,
+    "sub_pass": false,
+    "sub_value": 0.38,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R2_grp_subind_d8",
+    "alpha_id": "xAmbvNpW",
+    "sharpe": 1.3,
+    "fitness": 0.73,
+    "turnover": 0.2266,
+    "returns": 0.0708,
+    "sub_pass": false,
+    "sub_value": 0.47,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R2_step5_d10",
+    "status": "NO_ALPHA",
+    "url": "https://api.worldquantbrain.com/simulations/2XWD2YgSN4Lr9Dv1h0UCuBK"
+  },
+  {
+    "name": "R2_avdiff_d5",
+    "alpha_id": "xAmbvZkJ",
+    "sharpe": 1.34,
+    "fitness": 0.86,
+    "turnover": 0.1894,
+    "returns": 0.0788,
+    "sub_pass": true,
+    "sub_value": 0.58,
+    "all_pass": false,
+    "status": "COMPLETE"
+  }
+]

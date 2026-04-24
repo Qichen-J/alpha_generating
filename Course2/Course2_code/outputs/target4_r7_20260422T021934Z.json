@@ -1,0 +1,42 @@
+{
+  "T4_dolvol_subind_d50": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 5), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_dolvol_subind_d60": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 5), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_dolvol_subind_d70": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 5), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_dolvol_subind_d80": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 5), 126)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_dolvol_z252_subind_d30": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 5), 252)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_dolvol_z252_subind_d40": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 5), 252)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_dolvol_z252_subind_d50": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 5), 252)) * -rank(ts_delta(close, 3))"
+  },
+  "T4_dolvol_subind_d40_p5": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 5), 126)) * -rank(ts_delta(close, 5))"
+  },
+  "T4_dolvol_subind_d40_p10": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 5), 126)) * -rank(ts_delta(close, 10))"
+  },
+  "T4_dolvol_z252_subind_d60": {
+    "error": "no_result",
+    "expression": "rank(ts_zscore(ts_delta(volume * close, 5), 252)) * -rank(ts_delta(close, 3))"
+  }
+}

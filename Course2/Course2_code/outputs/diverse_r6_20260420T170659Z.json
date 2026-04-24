@@ -1,0 +1,177 @@
+[
+  {
+    "name": "R6_vpd_d5",
+    "alpha_id": "2rnm6x6P",
+    "sharpe": 0.67,
+    "fitness": 0.32,
+    "turnover": 0.1691,
+    "returns": 0.0397,
+    "sub_pass": false,
+    "sub_value": 0.11,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_vwap_rev_d5",
+    "alpha_id": "KPwrQlJE",
+    "sharpe": 1.34,
+    "fitness": 0.44,
+    "turnover": 0.577,
+    "returns": 0.0623,
+    "sub_pass": true,
+    "sub_value": 0.69,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_vwap_rev_d8",
+    "alpha_id": "gJoZdqJe",
+    "sharpe": 1.23,
+    "fitness": 0.44,
+    "turnover": 0.4495,
+    "returns": 0.0568,
+    "sub_pass": false,
+    "sub_value": 0.52,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_rev3_liq_d5",
+    "status": "NO_ALPHA",
+    "error": "Attempted to use unknown variable \"adv60\". <linkToCommonErrorMessages>Learn more</linkToCommonErrorMessages>"
+  },
+  {
+    "name": "R6_rev3_liq_d3",
+    "status": "NO_ALPHA",
+    "error": "Attempted to use unknown variable \"adv60\". <linkToCommonErrorMessages>Learn more</linkToCommonErrorMessages>"
+  },
+  {
+    "name": "R6_vol_conc_d7",
+    "alpha_id": "Jj5Q1GjE",
+    "sharpe": 1.53,
+    "fitness": 1.02,
+    "turnover": 0.2157,
+    "returns": 0.0955,
+    "sub_pass": true,
+    "sub_value": 1.12,
+    "all_pass": true,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_roa_d5",
+    "alpha_id": "om9WrPjl",
+    "sharpe": 0.76,
+    "fitness": 0.43,
+    "turnover": 0.0539,
+    "returns": 0.0393,
+    "sub_pass": true,
+    "sub_value": 0.56,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_invt_d5",
+    "alpha_id": "78K6M5M1",
+    "sharpe": 0.18,
+    "fitness": 0.04,
+    "turnover": 0.0577,
+    "returns": 0.0077,
+    "sub_pass": true,
+    "sub_value": 0.11,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_pv_cokurt_d5",
+    "status": "NO_ALPHA",
+    "error": "Attempted to use inaccessible or unknown operator \"ts_co_kurtosis\". <linkToCommonErrorMessages>Learn more</linkToCommonErrorMessages>"
+  },
+  {
+    "name": "R6_disp_d5",
+    "alpha_id": "qMm0VrME",
+    "sharpe": 0.96,
+    "fitness": 0.52,
+    "turnover": 0.2051,
+    "returns": 0.0609,
+    "sub_pass": false,
+    "sub_value": 0.3,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_vol_avdiff_d5",
+    "status": "TIMEOUT"
+  },
+  {
+    "name": "R6_avd_roa_d5",
+    "alpha_id": "j2d8OMNo",
+    "sharpe": -0.31,
+    "fitness": -0.12,
+    "turnover": 0.1495,
+    "returns": -0.0209,
+    "sub_pass": true,
+    "sub_value": -0.09,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_rev3_sub_d4",
+    "alpha_id": "gJoZ0OrJ",
+    "sharpe": 1.6,
+    "fitness": 0.79,
+    "turnover": 0.5301,
+    "returns": 0.1283,
+    "sub_pass": true,
+    "sub_value": 1.2,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_avd_grk_d5",
+    "alpha_id": "kqLgYXkl",
+    "sharpe": 1.38,
+    "fitness": 0.83,
+    "turnover": 0.1971,
+    "returns": 0.0705,
+    "sub_pass": true,
+    "sub_value": 0.61,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_hvol_rev_d5",
+    "alpha_id": "VkY0R8JJ",
+    "sharpe": 1.35,
+    "fitness": 0.62,
+    "turnover": 0.42,
+    "returns": 0.0879,
+    "sub_pass": true,
+    "sub_value": 0.68,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_avd_trunc05_d5",
+    "alpha_id": "e7qQWVJg",
+    "sharpe": 1.34,
+    "fitness": 0.86,
+    "turnover": 0.1894,
+    "returns": 0.0788,
+    "sub_pass": true,
+    "sub_value": 0.58,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R6_avd_trunc05_d4",
+    "alpha_id": "rKrenaRj",
+    "sharpe": 1.38,
+    "fitness": 0.87,
+    "turnover": 0.2061,
+    "returns": 0.0821,
+    "sub_pass": true,
+    "sub_value": 0.64,
+    "all_pass": false,
+    "status": "COMPLETE"
+  }
+]

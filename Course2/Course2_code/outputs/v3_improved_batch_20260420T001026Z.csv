@@ -1,0 +1,6 @@
+version,description,expression,status,location,error,result_summary
+v3.1,v3.1 波动率条件触发 - 高波动时持仓,"trade_when(ts_std_dev(returns, 20) > ts_mean(ts_std_dev(returns, 20), 126), -rank(ts_zscore(close - ts_mean(close, 63), 126)), 0)",failed,,"405: {""detail"":""Method \""POST\"" not allowed.""}",{}
+v3.2,v3.2 成交量条件触发 - 高流动性时持仓,"trade_when(volume > ts_mean(volume, 20), -rank(ts_zscore(close - ts_mean(close, 63), 126)), 0)",failed,,"405: {""detail"":""Method \""POST\"" not allowed.""}",{}
+v3.3,v3.3 趋势条件触发 - 上升趋势时反向持仓,"trend_signal = ts_delta(close, 5); trade_when(trend_signal > 0, -rank(ts_zscore(close - ts_mean(close, 63), 126)), 0)",failed,,"405: {""detail"":""Method \""POST\"" not allowed.""}",{}
+v3.4,v3.4 参数延长版 - 更长周期,"-rank(ts_zscore(close - ts_mean(close, 126), 252))",failed,,"405: {""detail"":""Method \""POST\"" not allowed.""}",{}
+v3.5,v3.5 日内收益版 - 基于开盘到收盘,"-rank(ts_zscore((close - open) - ts_mean(close - open, 63), 126))",failed,,"405: {""detail"":""Method \""POST\"" not allowed.""}",{}

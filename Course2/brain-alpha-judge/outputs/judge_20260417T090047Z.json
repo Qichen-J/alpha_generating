@@ -1,0 +1,905 @@
+[
+  {
+    "alpha_id": "1YnoblxM",
+    "candidate_label": "1YnoblxM",
+    "platform": {
+      "available": true,
+      "alpha_details": {
+        "id": "1YnoblxM",
+        "type": "REGULAR",
+        "author": "CQ89422",
+        "settings": {
+          "instrumentType": "EQUITY",
+          "region": "GLB",
+          "universe": "TOPDIV3000",
+          "delay": 1,
+          "decay": 20,
+          "neutralization": "SLOW_AND_FAST",
+          "truncation": 0.08,
+          "pasteurization": "ON",
+          "unitHandling": "VERIFY",
+          "nanHandling": "OFF",
+          "maxTrade": "OFF",
+          "maxPosition": "OFF",
+          "language": "FASTEXPR",
+          "visualization": false,
+          "startDate": "2014-01-01",
+          "endDate": "2023-12-31"
+        },
+        "regular": {
+          "code": "subtract(vec_avg(mdl138_longsimeq_3idpc), vec_avg(mdl138_5idpc))",
+          "description": null,
+          "operatorCount": 3
+        },
+        "dateCreated": "2026-04-16T08:00:35-04:00",
+        "dateSubmitted": null,
+        "dateModified": "2026-04-16T08:00:36-04:00",
+        "name": null,
+        "favorite": false,
+        "hidden": false,
+        "color": null,
+        "category": null,
+        "tags": [],
+        "classifications": [
+          {
+            "id": "DATA_USAGE:SINGLE_DATA_SET",
+            "name": "Single Data Set Alpha"
+          }
+        ],
+        "grade": null,
+        "stage": "IS",
+        "status": "UNSUBMITTED",
+        "is": {
+          "pnl": 2197365,
+          "bookSize": 20000000,
+          "longCount": 802,
+          "shortCount": 811,
+          "turnover": 0.6828,
+          "returns": 0.0212,
+          "drawdown": 0.0375,
+          "margin": 6.2e-05,
+          "sharpe": 0.91,
+          "fitness": 0.16,
+          "startDate": "2014-01-01",
+          "glbAmer": {
+            "pnl": 653477,
+            "bookSize": 20000000,
+            "longCount": 430,
+            "shortCount": 441,
+            "turnover": 0.2401,
+            "returns": 0.0063,
+            "drawdown": 0.0317,
+            "margin": 5.3e-05,
+            "fitness": 0.08,
+            "sharpe": 0.49
+          },
+          "glbApac": {
+            "pnl": 1274633,
+            "bookSize": 20000000,
+            "longCount": 218,
+            "shortCount": 214,
+            "turnover": 0.3454,
+            "returns": 0.0123,
+            "drawdown": 0.0326,
+            "margin": 7.1e-05,
+            "fitness": 0.13,
+            "sharpe": 0.67
+          },
+          "glbEmea": {
+            "pnl": 269255,
+            "bookSize": 20000000,
+            "longCount": 153,
+            "shortCount": 156,
+            "turnover": 0.0973,
+            "returns": 0.0026,
+            "drawdown": 0.019,
+            "margin": 5.4e-05,
+            "fitness": 0.07,
+            "sharpe": 0.5
+          },
+          "investabilityConstrained": {
+            "pnl": 1741807,
+            "bookSize": 20000000,
+            "longCount": 894,
+            "shortCount": 892,
+            "turnover": 0.4429,
+            "returns": 0.0168,
+            "drawdown": 0.0372,
+            "margin": 7.6e-05,
+            "fitness": 0.13,
+            "sharpe": 0.65
+          },
+          "checks": [
+            {
+              "name": "LOW_SHARPE",
+              "result": "FAIL",
+              "limit": 1.58,
+              "value": 0.91
+            },
+            {
+              "name": "LOW_FITNESS",
+              "result": "FAIL",
+              "limit": 1.0,
+              "value": 0.16
+            },
+            {
+              "name": "LOW_GLB_AMER_SHARPE",
+              "result": "FAIL",
+              "limit": 1,
+              "value": 0.49
+            },
+            {
+              "name": "LOW_GLB_EMEA_SHARPE",
+              "result": "FAIL",
+              "limit": 1,
+              "value": 0.5
+            },
+            {
+              "name": "LOW_GLB_APAC_SHARPE",
+              "result": "FAIL",
+              "limit": 1,
+              "value": 0.67
+            },
+            {
+              "name": "LOW_TURNOVER",
+              "result": "PASS",
+              "limit": 0.01,
+              "value": 0.6828
+            },
+            {
+              "name": "HIGH_TURNOVER",
+              "result": "PASS",
+              "limit": 0.7,
+              "value": 0.6828
+            },
+            {
+              "name": "CONCENTRATED_WEIGHT",
+              "result": "FAIL",
+              "date": "2023-07-10",
+              "limit": 0.1,
+              "value": 0.763856
+            },
+            {
+              "name": "LOW_SUB_UNIVERSE_SHARPE",
+              "result": "PASS",
+              "limit": 0.56,
+              "value": 0.63
+            },
+            {
+              "name": "SELF_CORRELATION",
+              "result": "PENDING"
+            },
+            {
+              "name": "DATA_DIVERSITY",
+              "result": "PENDING"
+            },
+            {
+              "name": "PROD_CORRELATION",
+              "result": "PENDING"
+            },
+            {
+              "name": "REGULAR_SUBMISSION",
+              "result": "PENDING"
+            },
+            {
+              "name": "LOW_2Y_SHARPE",
+              "result": "PASS",
+              "value": 1.8,
+              "limit": 1.58
+            },
+            {
+              "result": "PASS",
+              "name": "MATCHES_PYRAMID",
+              "effective": 1,
+              "multiplier": 1.3,
+              "pyramids": [
+                {
+                  "name": "GLB/D1/MODEL",
+                  "multiplier": 1.3
+                }
+              ]
+            },
+            {
+              "result": "WARNING",
+              "name": "MATCHES_THEMES",
+              "themes": [
+                {
+                  "id": "KymLz14",
+                  "multiplier": 1.0,
+                  "name": "All regions/D1 Power Pool Apr`26 2"
+                },
+                {
+                  "id": "lBqMzOB",
+                  "multiplier": 3.0,
+                  "name": "Investable HTVR Theme"
+                }
+              ]
+            }
+          ]
+        },
+        "os": null,
+        "train": null,
+        "test": null,
+        "prod": null,
+        "competitions": null,
+        "themes": null,
+        "pyramids": null,
+        "pyramidThemes": null,
+        "team": null,
+        "osmosisPoints": null,
+        "origin": "PLATFORM"
+      },
+      "expression": "subtract(vec_avg(mdl138_longsimeq_3idpc), vec_avg(mdl138_5idpc))",
+      "checks": [
+        {
+          "name": "LOW_SHARPE",
+          "result": "FAIL",
+          "limit": 1.58,
+          "value": 0.91
+        },
+        {
+          "name": "LOW_FITNESS",
+          "result": "FAIL",
+          "limit": 1.0,
+          "value": 0.16
+        },
+        {
+          "name": "LOW_GLB_AMER_SHARPE",
+          "result": "FAIL",
+          "limit": 1,
+          "value": 0.49
+        },
+        {
+          "name": "LOW_GLB_EMEA_SHARPE",
+          "result": "FAIL",
+          "limit": 1,
+          "value": 0.5
+        },
+        {
+          "name": "LOW_GLB_APAC_SHARPE",
+          "result": "FAIL",
+          "limit": 1,
+          "value": 0.67
+        },
+        {
+          "name": "LOW_TURNOVER",
+          "result": "PASS",
+          "limit": 0.01,
+          "value": 0.6828
+        },
+        {
+          "name": "HIGH_TURNOVER",
+          "result": "PASS",
+          "limit": 0.7,
+          "value": 0.6828
+        },
+        {
+          "name": "CONCENTRATED_WEIGHT",
+          "result": "FAIL",
+          "date": "2023-07-10",
+          "limit": 0.1,
+          "value": 0.763856
+        },
+        {
+          "name": "LOW_SUB_UNIVERSE_SHARPE",
+          "result": "PASS",
+          "limit": 0.56,
+          "value": 0.63
+        },
+        {
+          "name": "SELF_CORRELATION",
+          "result": "PENDING"
+        },
+        {
+          "name": "PROD_CORRELATION",
+          "result": "PENDING"
+        },
+        {
+          "name": "REGULAR_SUBMISSION",
+          "result": "PASS",
+          "limit": 4,
+          "value": 1
+        },
+        {
+          "name": "LOW_2Y_SHARPE",
+          "result": "PASS",
+          "value": 1.8,
+          "limit": 1.58
+        },
+        {
+          "result": "PASS",
+          "name": "MATCHES_PYRAMID",
+          "effective": 1,
+          "multiplier": 1.3,
+          "pyramids": [
+            {
+              "name": "GLB/D1/MODEL",
+              "multiplier": 1.3
+            }
+          ]
+        },
+        {
+          "result": "WARNING",
+          "name": "MATCHES_THEMES",
+          "themes": [
+            {
+              "id": "KymLz14",
+              "multiplier": 1.0,
+              "name": "All regions/D1 Power Pool Apr`26 2"
+            },
+            {
+              "id": "lBqMzOB",
+              "multiplier": 3.0,
+              "name": "Investable HTVR Theme"
+            }
+          ]
+        },
+        {
+          "name": "DATA_DIVERSITY",
+          "result": "WARNING",
+          "fields": [
+            "mdl138_longsimeq_3idpc",
+            "mdl138_5idpc"
+          ],
+          "dataCategoryName": "Model"
+        }
+      ],
+      "passed_checks": [
+        {
+          "name": "LOW_TURNOVER",
+          "result": "PASS",
+          "limit": 0.01,
+          "value": 0.6828
+        },
+        {
+          "name": "HIGH_TURNOVER",
+          "result": "PASS",
+          "limit": 0.7,
+          "value": 0.6828
+        },
+        {
+          "name": "LOW_SUB_UNIVERSE_SHARPE",
+          "result": "PASS",
+          "limit": 0.56,
+          "value": 0.63
+        },
+        {
+          "name": "REGULAR_SUBMISSION",
+          "result": "PASS",
+          "limit": 4,
+          "value": 1
+        },
+        {
+          "name": "LOW_2Y_SHARPE",
+          "result": "PASS",
+          "value": 1.8,
+          "limit": 1.58
+        },
+        {
+          "result": "PASS",
+          "name": "MATCHES_PYRAMID",
+          "effective": 1,
+          "multiplier": 1.3,
+          "pyramids": [
+            {
+              "name": "GLB/D1/MODEL",
+              "multiplier": 1.3
+            }
+          ]
+        }
+      ],
+      "failed_checks": [
+        {
+          "name": "LOW_SHARPE",
+          "result": "FAIL",
+          "limit": 1.58,
+          "value": 0.91
+        },
+        {
+          "name": "LOW_FITNESS",
+          "result": "FAIL",
+          "limit": 1.0,
+          "value": 0.16
+        },
+        {
+          "name": "LOW_GLB_AMER_SHARPE",
+          "result": "FAIL",
+          "limit": 1,
+          "value": 0.49
+        },
+        {
+          "name": "LOW_GLB_EMEA_SHARPE",
+          "result": "FAIL",
+          "limit": 1,
+          "value": 0.5
+        },
+        {
+          "name": "LOW_GLB_APAC_SHARPE",
+          "result": "FAIL",
+          "limit": 1,
+          "value": 0.67
+        },
+        {
+          "name": "CONCENTRATED_WEIGHT",
+          "result": "FAIL",
+          "date": "2023-07-10",
+          "limit": 0.1,
+          "value": 0.763856
+        },
+        {
+          "name": "SELF_CORRELATION",
+          "result": "PENDING"
+        },
+        {
+          "name": "PROD_CORRELATION",
+          "result": "PENDING"
+        },
+        {
+          "result": "WARNING",
+          "name": "MATCHES_THEMES",
+          "themes": [
+            {
+              "id": "KymLz14",
+              "multiplier": 1.0,
+              "name": "All regions/D1 Power Pool Apr`26 2"
+            },
+            {
+              "id": "lBqMzOB",
+              "multiplier": 3.0,
+              "name": "Investable HTVR Theme"
+            }
+          ]
+        },
+        {
+          "name": "DATA_DIVERSITY",
+          "result": "WARNING",
+          "fields": [
+            "mdl138_longsimeq_3idpc",
+            "mdl138_5idpc"
+          ],
+          "dataCategoryName": "Model"
+        }
+      ],
+      "platform_submit_ok": false,
+      "max_self_correlation": null,
+      "max_prod_correlation": null,
+      "yearly_stats": {
+        "schema": {
+          "name": "yearly-stats",
+          "title": "Yearly Stats",
+          "properties": [
+            {
+              "name": "year",
+              "title": "Year",
+              "type": "year"
+            },
+            {
+              "name": "pnl",
+              "title": "PnL",
+              "type": "amount"
+            },
+            {
+              "name": "bookSize",
+              "title": "Book Size",
+              "type": "amount"
+            },
+            {
+              "name": "longCount",
+              "title": "Long Count",
+              "type": "integer"
+            },
+            {
+              "name": "shortCount",
+              "title": "Short Count",
+              "type": "integer"
+            },
+            {
+              "name": "turnover",
+              "title": "Turnover",
+              "type": "percent"
+            },
+            {
+              "name": "sharpe",
+              "title": "Sharpe",
+              "type": "decimal"
+            },
+            {
+              "name": "returns",
+              "title": "Returns",
+              "type": "percent"
+            },
+            {
+              "name": "drawdown",
+              "title": "Drawdown",
+              "type": "percent"
+            },
+            {
+              "name": "margin",
+              "title": "Margin",
+              "type": "permyriad"
+            },
+            {
+              "name": "fitness",
+              "title": "Fitness",
+              "type": "decimal"
+            },
+            {
+              "name": "stage",
+              "title": "Stage",
+              "type": "string"
+            }
+          ]
+        },
+        "records": [
+          [
+            "2014",
+            262515.0,
+            20000000,
+            644,
+            651,
+            0.6689,
+            1.14,
+            0.0251,
+            0.0136,
+            7.5e-05,
+            0.22,
+            "IS"
+          ],
+          [
+            "2015",
+            191954.0,
+            20000000,
+            690,
+            701,
+            0.6895,
+            0.79,
+            0.0184,
+            0.0136,
+            5.3e-05,
+            0.13,
+            "IS"
+          ],
+          [
+            "2016",
+            201819.0,
+            20000000,
+            667,
+            682,
+            0.6919,
+            0.86,
+            0.0193,
+            0.0153,
+            5.6e-05,
+            0.14,
+            "IS"
+          ],
+          [
+            "2017",
+            86954.0,
+            20000000,
+            660,
+            685,
+            0.6741,
+            0.38,
+            0.0084,
+            0.0227,
+            2.5e-05,
+            0.04,
+            "IS"
+          ],
+          [
+            "2018",
+            22180.0,
+            20000000,
+            798,
+            796,
+            0.6648,
+            0.09,
+            0.0021,
+            0.026,
+            6e-06,
+            0.01,
+            "IS"
+          ],
+          [
+            "2019",
+            221486.0,
+            20000000,
+            805,
+            818,
+            0.6625,
+            1.02,
+            0.0212,
+            0.0195,
+            6.4e-05,
+            0.18,
+            "IS"
+          ],
+          [
+            "2020",
+            144598.0,
+            20000000,
+            881,
+            907,
+            0.6861,
+            0.59,
+            0.0151,
+            0.0167,
+            4.4e-05,
+            0.09,
+            "IS"
+          ],
+          [
+            "2021",
+            131924.0,
+            20000000,
+            1072,
+            1065,
+            0.6992,
+            0.47,
+            0.0126,
+            0.0375,
+            3.6e-05,
+            0.06,
+            "IS"
+          ],
+          [
+            "2022",
+            914985.0,
+            20000000,
+            1006,
+            1007,
+            0.7089,
+            3.63,
+            0.088,
+            0.0092,
+            0.000248,
+            1.28,
+            "IS"
+          ],
+          [
+            "2023",
+            18967.0,
+            20000000,
+            805,
+            805,
+            0.6823,
+            0.08,
+            0.0018,
+            0.0324,
+            5e-06,
+            0.0,
+            "IS"
+          ]
+        ]
+      }
+    },
+    "value_factor_trend": {
+      "available": true,
+      "start_date": "2025-04-17T08:59:57Z",
+      "end_date": "2026-04-17T08:59:57Z",
+      "score": {
+        "diversity_score": 0.07544872668019484,
+        "N": 74,
+        "A": 73,
+        "P": 13,
+        "P_max": 146,
+        "S_A": 0.9864864864864865,
+        "S_P": 0.08904109589041095,
+        "S_H": 0.8589547345129875,
+        "per_pyramid_counts": {
+          "GLB/D1/MODEL": 10,
+          "EUR/D1/ANALYST": 17,
+          "EUR/D1/MODEL": 2,
+          "EUR/D1/SENTIMENT": 2,
+          "EUR/D1/FUNDAMENTAL": 1,
+          "GLB/D1/FUNDAMENTAL": 7,
+          "GLB/D1/ANALYST": 6,
+          "IND/D1/FUNDAMENTAL": 6,
+          "IND/D1/OTHER": 5,
+          "IND/D1/RISK": 2,
+          "IND/D1/MODEL": 14,
+          "IND/D1/ANALYST": 1,
+          "IND/D1/PV": 1
+        }
+      },
+      "notes": [
+        "A means ATOM alpha count (single-dataset regular alphas in this submission-date window).",
+        "diversity_score = S_A * S_P * S_H"
+      ]
+    },
+    "expression_analysis": {
+      "operator_count": 3,
+      "unique_operator_count": 2,
+      "conditional_count": 0,
+      "distinct_windows": [
+        38
+      ],
+      "noncanonical_windows": [
+        38
+      ]
+    },
+    "extra": {
+      "overall": "review",
+      "rules": [
+        {
+          "id": "economic_foundation",
+          "title": "Economic foundation",
+          "status": "review",
+          "description": "Document the economic mechanism clearly enough to explain it briefly.",
+          "reasons": [
+            "Missing required fields: idea_summary, rationale"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "Signal purification is explained as a concrete market-relative template rather than an opaque formula."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author stresses alpha quality as something that should survive markets rather than cosmetic tuning."
+            }
+          ]
+        },
+        {
+          "id": "template_generalizability",
+          "title": "Template generalizability",
+          "status": "review",
+          "description": "Prefer structures that can be described as reusable templates or data-transformation patterns, not one-off curve fits.",
+          "reasons": [
+            "Need at least one supporting field: template_notes, stability_notes, cross_universe_notes, cross_region_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "The shared alpha is explicitly framed as a template that can be iterated across analysts and data fields."
+            },
+            {
+              "post_id": "31070381814295",
+              "author": "JJ47083",
+              "note": "The post highlights that poor first-order templates create high correlation and weak quality."
+            }
+          ]
+        },
+        {
+          "id": "implementation_simplicity",
+          "title": "Implementation simplicity",
+          "status": "review",
+          "description": "Prefer simple implementations without unnecessary moving parts, especially when unusual windows or controls are piled onto the signal.",
+          "reasons": [
+            "Uses uncommon window choices that should be justified explicitly: 38."
+          ],
+          "source_posts": [
+            {
+              "post_id": "29083873126551",
+              "author": "XX42289",
+              "note": "The operator survey shows a compact core used by many higher-stage consultants."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The PPAC world-first note reports operator average mostly between 1 and 3."
+            }
+          ]
+        },
+        {
+          "id": "diversification_and_correlation",
+          "title": "Diversification and correlation discipline",
+          "status": "review",
+          "description": "Explain portfolio fit and avoid candidates whose self or prod correlation is already too close to the existing pool.",
+          "reasons": [
+            "Need at least one supporting field: diversification_notes, portfolio_fit_notes, value_factor_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "The author warns against concentrating on one dataset and uses low self-correlation as a selection rule."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author directly ties low self and prod correlation to more stable combine and value-factor behavior."
+            }
+          ]
+        },
+        {
+          "id": "anti_overfitting_evidence",
+          "title": "Anti-overfitting evidence",
+          "status": "review",
+          "description": "Show evidence that the alpha was not tuned only for one narrow path.",
+          "reasons": [
+            "Need at least one supporting field: stability_notes, cross_universe_notes, cross_region_notes, test_period_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "25011325553943",
+              "author": "TL87739",
+              "note": "The post frames the signal as something that should generalize across multiple analyst and data-field substitutions."
+            },
+            {
+              "post_id": "33745762241175",
+              "author": "JJ47083",
+              "note": "The author repeatedly rechecks regions, universes, and selection strictness before submission."
+            }
+          ]
+        },
+        {
+          "id": "coverage_turnover_awareness",
+          "title": "Coverage and turnover awareness",
+          "status": "review",
+          "description": "Describe coverage handling, turnover control, and liquidity or universe composition before submission.",
+          "reasons": [
+            "Need at least one supporting field: coverage_notes, turnover_notes, liquidity_notes, capacity_notes, cross_universe_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "33745762241175",
+              "author": "JJ47083",
+              "note": "The SAC sharing explicitly filters by universe composition and turnover buckets before ranking selected alphas."
+            },
+            {
+              "post_id": "33394390003095",
+              "author": "ZV96737",
+              "note": "The Master reflection focuses on refining country-specific alpha construction and backtesting."
+            }
+          ]
+        },
+        {
+          "id": "quality_over_quantity",
+          "title": "Quality over quantity",
+          "status": "review",
+          "description": "Explain why this alpha deserves a submission slot now instead of being added only to increase count.",
+          "reasons": [
+            "Need at least one supporting field: submission_priority_notes, rationale, value_factor_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "The author explicitly says low-quality submissions cannot be withdrawn, so quality should dominate count."
+            },
+            {
+              "post_id": "29383292162199",
+              "author": "XX42289",
+              "note": "Stage progress is framed through count, pyramid, and combined metrics rather than raw daily churn."
+            }
+          ]
+        },
+        {
+          "id": "value_factor_alignment",
+          "title": "Value factor alignment",
+          "status": "review",
+          "description": "Explain how the alpha helps longer-term contribution after submission through diversification, lower problematic correlation, or stronger regular-alpha quality.",
+          "reasons": [
+            "Need at least one supporting field: value_factor_notes, diversification_notes, capacity_notes, portfolio_fit_notes"
+          ],
+          "source_posts": [
+            {
+              "post_id": "28966942842263",
+              "author": "XX42289",
+              "note": "Value factor is described as improving only after enough good regulars are accumulated."
+            },
+            {
+              "post_id": "35565000536087",
+              "author": "LR93609",
+              "note": "The author gives concrete regular-vs-SA advice for combine and value-factor improvement."
+            }
+          ]
+        }
+      ]
+    },
+    "deterministic_verdict": "BLOCK",
+    "llm_decision": {
+      "available": false,
+      "reason": "disabled_by_config"
+    },
+    "overall_verdict": "BLOCK",
+    "platform_submit_ok": false,
+    "worth_submit_now": false,
+    "submit_action": "not_attempted"
+  }
+]

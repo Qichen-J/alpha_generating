@@ -1,0 +1,146 @@
+[
+  {
+    "desc": "A1: SUBIND+(63,80)+d5",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 80))",
+    "sharpe": 1.19,
+    "fitness": 0.98,
+    "turnover": 0.1333,
+    "drawdown": 0.0922,
+    "sub_result": "FAIL",
+    "sub_value": 0.41,
+    "sharpe_check": "FAIL",
+    "fitness_check": "FAIL",
+    "all_pass": false,
+    "alpha_id": "XgYbjAq1",
+    "location": "https://api.worldquantbrain.com/simulations/pjfGf5rO4i0bLi4VbZeVhB"
+  },
+  {
+    "desc": "A2: SUBIND+(63,100)+d4",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "location": "https://api.worldquantbrain.com/simulations/2Rgr2E6IW4DP9EI10kMAmDZX",
+    "status": "timeout"
+  },
+  {
+    "desc": "A3: SUBIND+(63,100)+d5+t0.05",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "sharpe": 1.27,
+    "fitness": 1.11,
+    "turnover": 0.1261,
+    "drawdown": 0.0782,
+    "sub_result": "FAIL",
+    "sub_value": 0.5,
+    "sharpe_check": "PASS",
+    "fitness_check": "PASS",
+    "all_pass": false,
+    "alpha_id": "e7qb7pkM",
+    "location": "https://api.worldquantbrain.com/simulations/1RFtwQ9vy4gnbf1h8Zu2YMb"
+  },
+  {
+    "desc": "A4: SUBIND+(63,100)+d5+t0.10",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "location": "https://api.worldquantbrain.com/simulations/48KPpUcLA4RXchdwxoBoXa1",
+    "status": "timeout"
+  },
+  {
+    "desc": "A5: SUBIND+(63,100)+d6",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "sharpe": 1.25,
+    "fitness": 1.08,
+    "turnover": 0.1172,
+    "drawdown": 0.0787,
+    "sub_result": "FAIL",
+    "sub_value": 0.48,
+    "sharpe_check": "PASS",
+    "fitness_check": "PASS",
+    "all_pass": false,
+    "alpha_id": "mLxmLzVX",
+    "location": "https://api.worldquantbrain.com/simulations/2f49QCcN74ovaYsd352Qp7x"
+  },
+  {
+    "desc": "A6: SUBIND+grp_rank+d5",
+    "expr": "-group_rank(ts_zscore(close - ts_mean(close, 63), 100), subindustry)",
+    "sharpe": 1.28,
+    "fitness": 1.02,
+    "turnover": 0.131,
+    "drawdown": 0.0673,
+    "sub_result": "PASS",
+    "sub_value": 0.55,
+    "sharpe_check": "PASS",
+    "fitness_check": "PASS",
+    "all_pass": true,
+    "alpha_id": "1YnXYJEk",
+    "location": "https://api.worldquantbrain.com/simulations/G1OBC3U94Dj9Q4HnfLgn2d"
+  },
+  {
+    "desc": "A7: SUBIND+vol_scale+d5",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100)) * ts_scale(volume, 20)",
+    "location": "https://api.worldquantbrain.com/simulations/4tdD5g5OT5i8caZ34eJ0VHO",
+    "status": "timeout"
+  },
+  {
+    "desc": "B1: IND+(63,100)+d2",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "sharpe": 1.28,
+    "fitness": 1.04,
+    "turnover": 0.1744,
+    "drawdown": 0.0737,
+    "sub_result": "PASS",
+    "sub_value": 0.63,
+    "sharpe_check": "PASS",
+    "fitness_check": "PASS",
+    "all_pass": true,
+    "alpha_id": "d5lb5Wpx",
+    "location": "https://api.worldquantbrain.com/simulations/4k0X4acyq4Hma5P6a9CLoJ4"
+  },
+  {
+    "desc": "B2: IND+(60,100)+d3",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 60), 100))",
+    "location": "https://api.worldquantbrain.com/simulations/3MFnwJ1U74Ii9xquE0ns2O3",
+    "status": "timeout"
+  },
+  {
+    "desc": "B3: IND+(63,90)+d3",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 90))",
+    "location": "https://api.worldquantbrain.com/simulations/1KdGuG5Y85ihaRDjCYt6uhK",
+    "status": "timeout"
+  },
+  {
+    "desc": "B4: IND+(63,80)+d3",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 80))",
+    "location": "https://api.worldquantbrain.com/simulations/3vyKaZft64kCblNPToS7wXV",
+    "status": "timeout"
+  },
+  {
+    "desc": "B5: IND+(63,100)+d4",
+    "expr": "-rank(ts_zscore(close - ts_mean(close, 63), 100))",
+    "location": "https://api.worldquantbrain.com/simulations/1TvHoN9eS4tf9NGouloJBYh",
+    "status": "timeout"
+  },
+  {
+    "desc": "B6: IND+grp_rank+d3",
+    "expr": "-group_rank(ts_zscore(close - ts_mean(close, 63), 100), industry)",
+    "location": "https://api.worldquantbrain.com/simulations/2ev3tlQP5b0bicGUqnTZdW",
+    "status": "timeout"
+  },
+  {
+    "desc": "B7: IND+grp_rank(63,90)+d3",
+    "expr": "-group_rank(ts_zscore(close - ts_mean(close, 63), 90), industry)",
+    "sharpe": 1.23,
+    "fitness": 0.99,
+    "turnover": 0.1554,
+    "drawdown": 0.0778,
+    "sub_result": "PASS",
+    "sub_value": 0.57,
+    "sharpe_check": "FAIL",
+    "fitness_check": "FAIL",
+    "all_pass": false,
+    "alpha_id": "78KN7xMO",
+    "location": "https://api.worldquantbrain.com/simulations/BAokk7wV4vScgG10HWRbfGt"
+  },
+  {
+    "desc": "B8: IND+grp_rank+d4",
+    "expr": "-group_rank(ts_zscore(close - ts_mean(close, 63), 100), industry)",
+    "location": "https://api.worldquantbrain.com/simulations/hTZlYagF5gobFk15zb2EGzm",
+    "status": "timeout"
+  }
+]

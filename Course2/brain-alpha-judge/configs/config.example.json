@@ -1,0 +1,30 @@
+{
+  "username": "",
+  "password": "",
+  "BRAIN_API_URL": "https://api.worldquantbrain.com",
+  "BRAIN_URL": "https://platform.worldquantbrain.com",
+  "judge": {
+    "corpus_mode": "static",
+    "auto_submit": false,
+    "submit_confirmation_required": true,
+    "require_platform_pass": true,
+    "require_extra_review_pass": true,
+    "value_factor_trend": {
+      "enabled": true,
+      "window_days": 365,
+      "time_budget_seconds": 10,
+      "cache": {
+        "ttl_seconds": 21600
+      }
+    },
+    "llm": {
+      "enabled": true,
+      "language": "zh-CN",
+      "provider": "openai-compatible",
+      "model": "kimi-latest",
+      "api_url": "https://api.moonshot.cn/v1/chat/completions",
+      "api_key": "",
+      "timeout_seconds": 20
+    }
+  }
+}

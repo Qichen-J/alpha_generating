@@ -1,0 +1,41 @@
+﻿template_id,template,expression,fixed
+1,"vec_avg({data}),sector),bucket(rank(cap),range=""0.1,1,0.1"")),\","vec_avg(historical_volatility_10),sector),bucket(rank(cap),range=""0.1,1,0.1"")),\",false
+1,"vec_avg({data}),sector),bucket(rank(cap),range=""0.1,1,0.1"")),\","vec_avg(historical_volatility_120),sector),bucket(rank(cap),range=""0.1,1,0.1"")),\",false
+1,"vec_avg({data}),sector),bucket(rank(cap),range=""0.1,1,0.1"")),\","vec_avg(historical_volatility_150),sector),bucket(rank(cap),range=""0.1,1,0.1"")),\",false
+1,"vec_avg({data}),sector),bucket(rank(cap),range=""0.1,1,0.1"")),\","vec_avg(historical_volatility_180),sector),bucket(rank(cap),range=""0.1,1,0.1"")),\",false
+2,"group_neutralize(group_zscore(cap,sector),bucket(rank(cap),range=""0.1,1,0.1""))),\","group_neutralize(group_zscore(cap,sector),bucket(rank(cap),range=""0.1,1,0.1""))),\",false
+3,"ts_ir(returns-group_median(returns,sector),126))","ts_mean(returns-group_median(returns,sector),126)/ts_std_dev(returns-group_median(returns,sector),126)",true
+4,"fear = ts_mean(abs(returns - group_mean(returns,1,market))/(abs(returns)+abs(group_mean(returns,1,market))+0.1),20);\","ts_mean(abs(returns - group_mean(returns,1,market))/(abs(returns)+abs(group_mean(returns,1,market))+0.1),20)",true
+5,"-group_neutralize(fear*group_normalize(ts_decay_exp_window(ts_percentage(vec_count(rsk82_raw_m3g_tni_p_su_fte),60,percentage=0.9)\","-group_neutralize(ts_mean(abs(returns - group_mean(returns,1,market))/(abs(returns)+abs(group_mean(returns,1,market))+0.1),20)*group_normalize(ts_decay_exp_window(ts_delta(vec_count(rsk82_raw_m3g_tni_p_su_fte),60)-ts_delta(vec_count(historical_volatility_10),60),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20))),bucket(rank(cap),range='0.1,1,0.1'))",true
+6,"-ts_percentage(vec_count({data}),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\","-ts_delta(vec_count(historical_volatility_10),60)",true
+6,"-ts_percentage(vec_count({data}),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\","-ts_percentage(vec_count(historical_volatility_120),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\",false
+6,"-ts_percentage(vec_count({data}),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\","-ts_percentage(vec_count(historical_volatility_150),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\",false
+6,"-ts_percentage(vec_count({data}),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\","-ts_percentage(vec_count(historical_volatility_180),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20)))\",false
+7,",bucket(rank(cap),range=""0.1,1,0.1""))",",bucket(rank(cap),range=""0.1,1,0.1""))",false
+8,"d1_level=ts_max(vec_stddev({data}),20);\","d1_level=ts_max(vec_stddev(historical_volatility_10),20);\",false
+8,"d1_level=ts_max(vec_stddev({data}),20);\","d1_level=ts_max(vec_stddev(historical_volatility_120),20);\",false
+8,"d1_level=ts_max(vec_stddev({data}),20);\","d1_level=ts_max(vec_stddev(historical_volatility_150),20);\",false
+8,"d1_level=ts_max(vec_stddev({data}),20);\","d1_level=ts_max(vec_stddev(historical_volatility_180),20);\",false
+9,"d1_stability=ts_kurtosis(vec_stddev({data}),20);\","d1_stability=ts_kurtosis(vec_stddev(historical_volatility_10),20);\",false
+9,"d1_stability=ts_kurtosis(vec_stddev({data}),20);\","d1_stability=ts_kurtosis(vec_stddev(historical_volatility_120),20);\",false
+9,"d1_stability=ts_kurtosis(vec_stddev({data}),20);\","d1_stability=ts_kurtosis(vec_stddev(historical_volatility_150),20);\",false
+9,"d1_stability=ts_kurtosis(vec_stddev({data}),20);\","d1_stability=ts_kurtosis(vec_stddev(historical_volatility_180),20);\",false
+10,"mkt_level=group_min(d1_stability,industry);\","mkt_level=group_min(d1_stability,industry);\",false
+11,"-group_neutralize(d1_stability<=mkt_level?-d1_level:d1_level,bucket(rank(cap),range=""0.1,1,0.1""))","-group_neutralize(d1_stability<=mkt_level?-d1_level:d1_level,bucket(rank(cap),range=""0.1,1,0.1""))",false
+12,"group = bucket(rank(cap),range='0.1,1,0.1')","group = bucket(rank(cap),range='0.1,1,0.1')",false
+13,"risk = rank(-ts_av_diff(vec_min({Analyst Std}),360))","risk = rank(-ts_av_diff(vec_min(close),360))",false
+14,"alpha=rank((1-risk)*group_rank(ts_scale(vec_max({OptionHighPrice})/close,120),industry))","alpha=rank((1-risk)*group_rank(ts_scale(vec_max(close)/close,120),industry))",false
+15,"group_neutralize(ts_mean(alpha,2),group)","group_neutralize(ts_mean(alpha,2),group)",false
+16,"my_group2 = bucket(rank(cap),range='0,1,0.1')","my_group2 = bucket(rank(cap),range='0,1,0.1')",false
+17,"alpha=rank(group_rank(ts_decay_linear(volume/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg({Fundamental})),my_group)*group_rank(-ts_delta(close,5),my_group))","alpha=rank(group_rank(ts_decay_linear(volume/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg(historical_volatility_10)),my_group)*group_rank(-ts_delta(close,5),my_group))",false
+17,"alpha=rank(group_rank(ts_decay_linear(volume/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg({Fundamental})),my_group)*group_rank(-ts_delta(close,5),my_group))","alpha=rank(group_rank(ts_decay_linear(volume/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg(historical_volatility_120)),my_group)*group_rank(-ts_delta(close,5),my_group))",false
+17,"alpha=rank(group_rank(ts_decay_linear(volume/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg({Fundamental})),my_group)*group_rank(-ts_delta(close,5),my_group))","alpha=rank(group_rank(ts_decay_linear(volume/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg(historical_volatility_150)),my_group)*group_rank(-ts_delta(close,5),my_group))",false
+17,"alpha=rank(group_rank(ts_decay_linear(volume/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg({Fundamental})),my_group)*group_rank(-ts_delta(close,5),my_group))","alpha=rank(group_rank(ts_decay_linear(volume/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg(historical_volatility_180)),my_group)*group_rank(-ts_delta(close,5),my_group))",false
+18,"trade_when(volume>adv20,group_neutralize(alpha,my_group2),-1)","trade_when(volume>adv20,group_neutralize(alpha,my_group2),-1)",false
+19,"market_return = group_mean(returns,1,market)","market_return = group_mean(returns,1,market)",false
+20,"fear = ts_mean(abs(returns - market_return)/(abs(returns)+abs(market_return)),20)","fear = ts_mean(abs(returns - market_return)/(abs(returns)+abs(market_return)),20)",false
+21,"vhat = ts_regression(volume,ts_mean(vec_avg({Sentiment}),5),120)","vhat = ts_regression(volume,ts_mean(vec_avg(close),5),120)",false
+22,"ehat = ts_regression(returns-market_return,vhat,120)","ehat = ts_regression(returns-market_return,vhat,120)",false
+23,"alpha = group_neutralize(-ehat*rank(fear),bucket(rank(cap),range='0,1,0.1'))","alpha = group_neutralize(-ehat*rank(fear),bucket(rank(cap),range='0,1,0.1'))",false
+24,"trade_when(abs(returns)<0.075,regression_neut(alpha,volume),abs(returns)>0.1)","trade_when(abs(returns)<0.075,regression_neut(alpha,volume),abs(returns)>0.1)",false
+25,"vector_neut(group_neutralize(group_neutralize(ts_arg_max(vec_norm({datafield}), 220),bucket(rank(assets), range=""0.1,1,0.1"")),subindustry), group_normalize(ts_delay(cap, 220),subindustry))","vector_neut(group_neutralize(group_neutralize(ts_arg_max(vec_norm(historical_volatility_10), 220),bucket(rank(assets), range=""0.1,1,0.1"")),subindustry), group_normalize(ts_delay(cap, 220),subindustry))",false

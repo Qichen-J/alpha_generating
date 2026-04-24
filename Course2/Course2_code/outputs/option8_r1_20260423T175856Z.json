@@ -1,0 +1,42 @@
+{
+  "OPT8_iv_rv_base_d10": {
+    "error": "no_result",
+    "expression": "my_group=bucket(rank(cap),range='0.1,1,0.1');IR=abs(ts_mean(returns,252)/ts_std_dev(returns,252));iv_rv_gap=ts_zscore(implied_volatility_mean_30-historical_volatility_30,126);term_shape=ts_zscore(implied_volatility_mean_30-implied_volatility_mean_180,126);raw=-rank(iv_rv_gap)*rank(term_shape);alpha=regression_neut(group_neutralize(raw,my_group),IR);trade_when(volume>adv20,alpha,-1)"
+  },
+  "OPT8_iv_rv_skew_d10": {
+    "error": "no_result",
+    "expression": "my_group=bucket(rank(cap),range='0.1,1,0.1');IR=abs(ts_mean(returns,252)/ts_std_dev(returns,252));iv_rv_gap=ts_zscore(implied_volatility_mean_30-historical_volatility_30,126);skew_signal=ts_zscore(implied_volatility_mean_skew_30,126);raw=-rank(iv_rv_gap)*rank(skew_signal);alpha=regression_neut(group_neutralize(raw,my_group),IR);trade_when(volume>adv20,alpha,-1)"
+  },
+  "OPT8_term_twist_d10": {
+    "error": "no_result",
+    "expression": "my_group=bucket(rank(cap),range='0.1,1,0.1');IR=abs(ts_mean(returns,252)/ts_std_dev(returns,252));slope=implied_volatility_mean_30-implied_volatility_mean_180;twist=ts_zscore(ts_delta(slope,10),252);carry=ts_zscore(slope,126);raw=-rank(twist)*rank(carry);alpha=regression_neut(group_neutralize(raw,my_group),IR);trade_when(abs(returns)<0.08,alpha,-1)"
+  },
+  "OPT8_put_call_d10": {
+    "error": "no_result",
+    "expression": "my_group=bucket(rank(cap),range='0.1,1,0.1');IR=abs(ts_mean(returns,252)/ts_std_dev(returns,252));pc_spread=ts_zscore(implied_volatility_put_30-implied_volatility_call_30,126);spread_jump=ts_rank(ts_delta(pc_spread,5),60);raw=-rank(spread_jump);alpha=regression_neut(group_neutralize(raw,my_group),IR);trade_when(volume>adv20,alpha,-1)"
+  },
+  "OPT8_parkinson_d10": {
+    "error": "no_result",
+    "expression": "my_group=bucket(rank(cap),range='0.1,1,0.1');IR=abs(ts_mean(returns,252)/ts_std_dev(returns,252));pk_gap=ts_zscore(parkinson_volatility_30-historical_volatility_30,126);pk_jump=ts_rank(ts_delta(pk_gap,5),60);raw=-rank(pk_jump);alpha=regression_neut(group_neutralize(raw,my_group),IR);trade_when(volume>adv20,alpha,-1)"
+  },
+  "OPT8_iv_level_rev_d10": {
+    "error": "no_result",
+    "expression": "my_group=bucket(rank(cap),range='0.1,1,0.1');IR=abs(ts_mean(returns,252)/ts_std_dev(returns,252));iv_pct=ts_rank(implied_volatility_mean_30,252);raw=-rank(iv_pct);alpha=regression_neut(group_neutralize(raw,my_group),IR);trade_when(volume>adv20,alpha,-1)"
+  },
+  "OPT8_iv_rv_full_d10": {
+    "error": "no_result",
+    "expression": "my_group=bucket(rank(cap),range='0.1,1,0.1');IR=abs(ts_mean(returns,252)/ts_std_dev(returns,252));iv_rv_gap=ts_zscore(implied_volatility_mean_30-historical_volatility_30,126);term_shape=ts_zscore(implied_volatility_mean_30-implied_volatility_mean_90,126);skew_signal=ts_zscore(implied_volatility_mean_skew_30,126);raw=-rank(iv_rv_gap)*rank(term_shape)*rank(skew_signal);alpha=regression_neut(group_neutralize(raw,my_group),IR);trade_when(volume>adv20,alpha,-1)"
+  },
+  "OPT8_iv_rv_base_d5": {
+    "error": "no_result",
+    "expression": "my_group=bucket(rank(cap),range='0.1,1,0.1');IR=abs(ts_mean(returns,252)/ts_std_dev(returns,252));iv_rv_gap=ts_zscore(implied_volatility_mean_30-historical_volatility_30,126);term_shape=ts_zscore(implied_volatility_mean_30-implied_volatility_mean_180,126);raw=-rank(iv_rv_gap)*rank(term_shape);alpha=regression_neut(group_neutralize(raw,my_group),IR);trade_when(volume>adv20,alpha,-1)"
+  },
+  "OPT8_iv_rv_base_d20": {
+    "error": "no_result",
+    "expression": "my_group=bucket(rank(cap),range='0.1,1,0.1');IR=abs(ts_mean(returns,252)/ts_std_dev(returns,252));iv_rv_gap=ts_zscore(implied_volatility_mean_30-historical_volatility_30,126);term_shape=ts_zscore(implied_volatility_mean_30-implied_volatility_mean_180,126);raw=-rank(iv_rv_gap)*rank(term_shape);alpha=regression_neut(group_neutralize(raw,my_group),IR);trade_when(volume>adv20,alpha,-1)"
+  },
+  "OPT8_term_twist_d5": {
+    "error": "no_result",
+    "expression": "my_group=bucket(rank(cap),range='0.1,1,0.1');IR=abs(ts_mean(returns,252)/ts_std_dev(returns,252));slope=implied_volatility_mean_30-implied_volatility_mean_180;twist=ts_zscore(ts_delta(slope,10),252);carry=ts_zscore(slope,126);raw=-rank(twist)*rank(carry);alpha=regression_neut(group_neutralize(raw,my_group),IR);trade_when(abs(returns)<0.08,alpha,-1)"
+  }
+}

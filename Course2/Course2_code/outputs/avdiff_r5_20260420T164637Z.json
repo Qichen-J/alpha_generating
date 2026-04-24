@@ -1,0 +1,139 @@
+[
+  {
+    "name": "R5_avd20_d7",
+    "alpha_id": "9qAW88le",
+    "sharpe": 1.28,
+    "fitness": 0.86,
+    "turnover": 0.1665,
+    "returns": 0.0743,
+    "sub_pass": false,
+    "sub_value": 0.5,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R5_avd20_d8",
+    "alpha_id": "58qgAxjn",
+    "sharpe": 1.27,
+    "fitness": 0.86,
+    "turnover": 0.1581,
+    "returns": 0.0729,
+    "sub_pass": false,
+    "sub_value": 0.49,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R5_avd20_d10",
+    "alpha_id": "KPwr5qdg",
+    "sharpe": 1.24,
+    "fitness": 0.86,
+    "turnover": 0.1452,
+    "returns": 0.0704,
+    "sub_pass": false,
+    "sub_value": 0.48,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R5_avd20_d12",
+    "alpha_id": "58qgAwdo",
+    "sharpe": 1.21,
+    "fitness": 0.86,
+    "turnover": 0.1355,
+    "returns": 0.0687,
+    "sub_pass": false,
+    "sub_value": 0.49,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R5_avd20_d15",
+    "status": "TIMEOUT",
+    "url": "https://api.worldquantbrain.com/simulations/2GN5ZgcHv4xUbPP4e0UNW8M"
+  },
+  {
+    "name": "R5_avd30_d5",
+    "alpha_id": "3qnVP1wg",
+    "sharpe": 1.21,
+    "fitness": 0.79,
+    "turnover": 0.1677,
+    "returns": 0.0708,
+    "sub_pass": false,
+    "sub_value": 0.51,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R5_avd30_d8",
+    "alpha_id": "XgYJzALz",
+    "sharpe": 1.15,
+    "fitness": 0.79,
+    "turnover": 0.1401,
+    "returns": 0.0664,
+    "sub_pass": false,
+    "sub_value": 0.44,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R5_avd40_d7",
+    "alpha_id": "QP5KgdZW",
+    "sharpe": 1.17,
+    "fitness": 0.82,
+    "turnover": 0.1377,
+    "returns": 0.068,
+    "sub_pass": false,
+    "sub_value": 0.47,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R5_grp_d7",
+    "alpha_id": "1YnZPalK",
+    "sharpe": 1.33,
+    "fitness": 0.83,
+    "turnover": 0.1715,
+    "returns": 0.0671,
+    "sub_pass": false,
+    "sub_value": 0.51,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R5_vol40_d7",
+    "alpha_id": "pw15Zdgx",
+    "sharpe": 1.19,
+    "fitness": 0.81,
+    "turnover": 0.1509,
+    "returns": 0.0701,
+    "sub_pass": true,
+    "sub_value": 0.67,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R5_ind_d7",
+    "alpha_id": "WjWe00wO",
+    "sharpe": 1.21,
+    "fitness": 0.85,
+    "turnover": 0.1607,
+    "returns": 0.0791,
+    "sub_pass": false,
+    "sub_value": 0.41,
+    "all_pass": false,
+    "status": "COMPLETE"
+  },
+  {
+    "name": "R5_avd_only_d7",
+    "alpha_id": "Jj5QrLNE",
+    "sharpe": -1.06,
+    "fitness": -0.76,
+    "turnover": 0.1784,
+    "returns": -0.0916,
+    "sub_pass": false,
+    "sub_value": -0.55,
+    "all_pass": false,
+    "status": "COMPLETE"
+  }
+]

@@ -1,0 +1,6 @@
+﻿idx,name,expression,status,location,error,result_summary
+1,Target 1: 波动率风险溢价均值回归,"group_neutralize(-rank(ts_zscore(ts_std_dev(returns,20), 126)) * rank(ts_zscore(close - ts_mean(close,126), 126)), bucket(rank(cap), range='0.1,1,0.1'))",timeout,https://api.worldquantbrain.com/simulations/U4Aza3VF5jzaD315hM1GDQp,,{}
+2,Target 2: 尾部恐慌反转,"rank(ts_zscore(ts_delta(close, 5), 252)) * -rank(ts_rank(ts_std_dev(returns, 20), 252))",timeout,https://api.worldquantbrain.com/simulations/3iht3Vc4P4lw8ZqOcWgHAat,,{}
+3,Target 3: 期限结构扭曲,"group_neutralize(-rank(ts_delta(ts_zscore(returns, 20) - ts_zscore(returns, 63), 10)) * rank(ts_zscore(returns, 63)), industry)",timeout,https://api.worldquantbrain.com/simulations/45W3tpeTK4QaaOp766OsRwG,,{}
+4,Target 4: 成交拥挤反转,"rank(ts_zscore(ts_delta(volume, 3), 126)) * -rank(ts_delta(close, 5))",timeout,https://api.worldquantbrain.com/simulations/4nYW0f4cA5gybvV14oaSJVd8,,{}
+5,Target 5: 流动性压力反转,"group_neutralize(-rank(ts_delta(close, 5) - ts_zscore(volume, 126)) * rank(volume / ts_mean(volume, 20)), bucket(rank(cap), range='0.1,1,0.1'))",timeout,https://api.worldquantbrain.com/simulations/5e2hy1BB4SUawS5x2I7fxs,,{}

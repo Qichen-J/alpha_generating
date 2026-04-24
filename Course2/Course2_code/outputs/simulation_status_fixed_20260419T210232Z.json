@@ -1,0 +1,42 @@
+[
+  {
+    "idx":1,
+    "template_id":"3",
+    "expression":"ts_ir(returns-group_median(returns,sector),126)",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/2qrEGm3P65amacw1fKxEhUkN",
+    "error":null,
+    "result":"{\"id\": \"2qrEGm3P65amacw1fKxEhUkN\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Attempted to use inaccessible or unknown operator \\\"ts_ir\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 0, \"end\": 47, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":2,
+    "template_id":"4",
+    "expression":"fear = ts_mean(abs(returns - group_mean(returns,1,market))\/(abs(returns)+abs(group_mean(returns,1,market))+0.1),20)",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/25p6fH8aL4quaMEF5arRs7P",
+    "error":null,
+    "result":"{\"id\": \"25p6fH8aL4quaMEF5arRs7P\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Unexpected end of input. <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": null, \"start\": null, \"end\": null, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":3,
+    "template_id":"5",
+    "expression":"-group_neutralize(fear*group_normalize(ts_decay_exp_window(ts_percentage(vec_count(rsk82_raw_m3g_tni_p_su_fte),60,percentage=0.9)-ts_percentage(vec_count(historical_volatility_10),60,percentage=0.1),20, factor=0.8),market)*inverse(abs(ts_entropy(volume,20))),bucket(rank(cap),range='0.1,1,0.1'))",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/218rQk6Pm4QD8X6GGO5aH4W",
+    "error":null,
+    "result":"{\"id\": \"218rQk6Pm4QD8X6GGO5aH4W\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Attempted to use unknown variable \\\"fear\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 18, \"end\": 22, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  },
+  {
+    "idx":4,
+    "template_id":"6",
+    "expression":"-ts_percentage(vec_count(historical_volatility_10),60,percentage=0.1)",
+    "status":"done",
+    "alpha_id":null,
+    "location":"https:\/\/api.worldquantbrain.com\/simulations\/1FvDKXaYv4x1c7K3mUFyBj4",
+    "error":null,
+    "result":"{\"id\": \"1FvDKXaYv4x1c7K3mUFyBj4\", \"type\": \"REGULAR\", \"status\": \"ERROR\", \"message\": \"Attempted to use inaccessible or unknown operator \\\"ts_percentage\\\". <linkToCommonErrorMessages>Learn more<\/linkToCommonErrorMessages>\", \"location\": {\"line\": 1, \"start\": 1, \"end\": 69, \"property\": \"regular\"}, \"links\": {\"linkToCommonErrorMessages\": \"https:\/\/support.worldquantbrain.com\/hc\/en-us\/articles\/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages\"}}"
+  }
+]

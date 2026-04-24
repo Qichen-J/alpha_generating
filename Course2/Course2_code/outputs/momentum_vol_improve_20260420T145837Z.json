@@ -1,0 +1,77 @@
+[
+  {
+    "name": "A1_grp_rank_ind",
+    "status": "ERROR",
+    "error": "invalid literal for int() with base 10: '5.0'"
+  },
+  {
+    "name": "A2_grp_rank_subind",
+    "status": "ERROR",
+    "error": "invalid literal for int() with base 10: '5.0'"
+  },
+  {
+    "name": "A3_grp_rank_ind_d3",
+    "status": "ERROR",
+    "error": "invalid literal for int() with base 10: '5.0'"
+  },
+  {
+    "name": "B1_liq_weight",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "B2_liq_decay",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "C1_shorter_windows",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "C2_medium_windows",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "C3_delta10",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "D1_grp_liq_ind",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "D2_grp_liq_subind",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "E1_orig_d3_subind",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "E2_orig_d5_t010",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "E3_orig_d2_subind",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "F1_neg_rank_whole",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  },
+  {
+    "name": "F2_grp_rank_whole",
+    "status": "ERROR",
+    "error": "429 Client Error: Too Many Requests for url: https://api.worldquantbrain.com/simulations"
+  }
+]

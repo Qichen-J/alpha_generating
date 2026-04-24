@@ -1,0 +1,120 @@
+[
+  {
+    "name": "OPT8_triple_skew60",
+    "alpha_id": "xAm5Pm8n",
+    "sharpe": 1.57,
+    "fitness": 1.1,
+    "turnover": 0.2228,
+    "returns": 0.1101,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.57 | LOW_FITNESS=✅1.1 | LOW_TURNOVER=✅0.2228 | HIGH_TURNOVER=✅0.2228 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅1.0 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_triple_putskew",
+    "error": "sim_failed"
+  },
+  {
+    "name": "OPT8_triple_callskew",
+    "error": "sim_failed"
+  },
+  {
+    "name": "OPT8_triple_hv",
+    "alpha_id": "vRJPeNG3",
+    "sharpe": 1.29,
+    "fitness": 0.73,
+    "turnover": 0.2291,
+    "returns": 0.0726,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.29 | LOW_FITNESS=❌0.73 | LOW_TURNOVER=✅0.2291 | HIGH_TURNOVER=✅0.2291 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅0.61 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_triple_term",
+    "alpha_id": "KPwZXVYl",
+    "sharpe": 1.01,
+    "fitness": 0.49,
+    "turnover": 0.2551,
+    "returns": 0.059,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌1.01 | LOW_FITNESS=❌0.49 | LOW_TURNOVER=✅0.2551 | HIGH_TURNOVER=✅0.2551 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅0.44 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_triple_pcdiff",
+    "alpha_id": "A1OEg8ad",
+    "sharpe": 1.23,
+    "fitness": 0.66,
+    "turnover": 0.2796,
+    "returns": 0.0802,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌1.23 | LOW_FITNESS=❌0.66 | LOW_TURNOVER=✅0.2796 | HIGH_TURNOVER=✅0.2796 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅0.58 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_triple_longz",
+    "alpha_id": "VkYeX1KV",
+    "sharpe": 1.54,
+    "fitness": 1.07,
+    "turnover": 0.2237,
+    "returns": 0.1077,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.54 | LOW_FITNESS=✅1.07 | LOW_TURNOVER=✅0.2237 | HIGH_TURNOVER=✅0.2237 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅0.87 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_triple_subind",
+    "alpha_id": "npOrn0ll",
+    "sharpe": 1.65,
+    "fitness": 1.1,
+    "turnover": 0.231,
+    "returns": 0.1032,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.65 | LOW_FITNESS=✅1.1 | LOW_TURNOVER=✅0.231 | HIGH_TURNOVER=✅0.231 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅0.88 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_triple_cap5",
+    "alpha_id": "npOrnWeE",
+    "sharpe": 1.57,
+    "fitness": 1.09,
+    "turnover": 0.2229,
+    "returns": 0.1084,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.57 | LOW_FITNESS=✅1.09 | LOW_TURNOVER=✅0.2229 | HIGH_TURNOVER=✅0.2229 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅0.86 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_triple_park_term",
+    "alpha_id": "j2dOnA8W",
+    "sharpe": 0.97,
+    "fitness": 0.47,
+    "turnover": 0.2523,
+    "returns": 0.0601,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌0.97 | LOW_FITNESS=❌0.47 | LOW_TURNOVER=✅0.2523 | HIGH_TURNOVER=✅0.2523 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌0.39 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_triple_skew90",
+    "alpha_id": "Jj5rnAOx",
+    "sharpe": 1.56,
+    "fitness": 1.09,
+    "turnover": 0.2224,
+    "returns": 0.1091,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.56 | LOW_FITNESS=✅1.09 | LOW_TURNOVER=✅0.2224 | HIGH_TURNOVER=✅0.2224 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅1.0 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_dblopt_noret",
+    "alpha_id": "akWGovJv",
+    "sharpe": 0.52,
+    "fitness": 0.16,
+    "turnover": 0.2094,
+    "returns": 0.0205,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=❌0.52 | LOW_FITNESS=❌0.16 | LOW_TURNOVER=✅0.2094 | HIGH_TURNOVER=✅0.2094 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=❌-0.55 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  },
+  {
+    "name": "OPT8_triple_skewterm",
+    "alpha_id": "xAm5RRQq",
+    "sharpe": 1.6,
+    "fitness": 0.93,
+    "turnover": 0.3004,
+    "returns": 0.1022,
+    "all_pass": false,
+    "checks": "LOW_SHARPE=✅1.6 | LOW_FITNESS=❌0.93 | LOW_TURNOVER=✅0.3004 | HIGH_TURNOVER=✅0.3004 | CONCENTRATED_WEIGHT=✅ | LOW_SUB_UNIVERSE_SHARPE=✅0.86 | SELF_CORRELATION=❌ | MATCHES_COMPETITION=✅"
+  }
+]
